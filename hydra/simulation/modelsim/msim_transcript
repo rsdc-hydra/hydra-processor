@@ -1,0 +1,50 @@
+# Reading pref.tcl
+# do hydra_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/Programs/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+M:/Academics/Sem5/WorkPlace/Circuits\ and\ Systems\ Design/Digital/Final\ Processor\ Design/hydra {M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/bcd7seg.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:40:58 on Jan 30,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra" M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/bcd7seg.v 
+# -- Compiling module bcd7seg
+# 
+# Top level modules:
+# 	bcd7seg
+# End time: 22:40:58 on Jan 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.bcd7seg
+# vsim work.bcd7seg 
+# Start time: 22:42:19 on Jan 30,2023
+# Loading work.bcd7seg
+add wave -position end  sim:/bcd7seg/bcd
+add wave -position end  sim:/bcd7seg/seg
+force -freeze sim:/bcd7seg/bcd 1 0
+run
+run
+force -freeze sim:/bcd7seg/bcd 0002 0
+# Invalid binary digit: 2.
+# ** UI-Msg: (vsim-4011) Invalid force value: 0002 0.
+# 
+run
+run
+force -freeze sim:/bcd7seg/bcd 0002 0
+# Invalid binary digit: 2.
+# ** UI-Msg: (vsim-4011) Invalid force value: 0002 0.
+# 
+force -freeze sim:/bcd7seg/bcd 2 0
+# Invalid binary digit: 2.
+# ** UI-Msg: (vsim-4011) Invalid force value: 2 0.
+# 
+force -freeze sim:/bcd7seg/bcd 0010 0
+run
+# End time: 22:48:30 on Jan 30,2023, Elapsed time: 0:06:11
+# Errors: 0, Warnings: 0

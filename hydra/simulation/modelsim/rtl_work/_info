@@ -1,0 +1,35 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dM:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/simulation/modelsim
+vbcd7seg
+!s110 1675098658
+!i10b 1
+!s100 SaXbP2I@2>^0:d0lKbQ9E3
+!s11b Dg1SIo80bB@j0V0VzS_@n1
+I;;AMo16ngS7`O>F1HAcg_0
+VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1675090360
+8M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/bcd7seg.v
+FM:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/bcd7seg.v
+!i122 0
+L0 1 22
+OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1675098658.000000
+!s107 M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/bcd7seg.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra|M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/bcd7seg.v|
+!i113 1
+o-vlog01compat -work work
+!s92 -vlog01compat -work work {+incdir+M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra}
+tCvgOpt 0
