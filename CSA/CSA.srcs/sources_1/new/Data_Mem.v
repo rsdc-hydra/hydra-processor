@@ -7,7 +7,7 @@ module Data_Mem  #(parameter WIDTH = 32,parameter MEM_SIZE=5) (
 reg [WIDTH-1:0] mem [2**MEM_SIZE-1:0];
 wire  [MEM_SIZE-1:0] mem_addr=addr[MEM_SIZE-1:0];
 
-assign read_data=(mem_read) mem[addr]: 0;
+assign read_data=(mem_read)? mem[addr]: 0;
 
 always @(posedge clk) begin
     if(mem_write)
