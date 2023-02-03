@@ -21,7 +21,7 @@ module Reg_File_Tb;
   );
 
   initial begin
-  $display("hello");
+  
   //1
     read_reg_addr_1 = 0;
     read_reg_addr_2= 1;
