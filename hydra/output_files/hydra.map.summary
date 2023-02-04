@@ -1,14 +1,14 @@
-Analysis & Synthesis Status : Successful - Mon Jan 30 20:25:27 2023
+Analysis & Synthesis Status : Failed - Thu Feb 02 20:43:25 2023
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : hydra
-Top-level Entity Name : bcd7seg
+Top-level Entity Name : Parameters
 Family : Cyclone IV E
-Total logic elements : 7
-    Total combinational functions : 7
-    Dedicated logic registers : 0
-Total registers : 0
-Total pins : 11
-Total virtual pins : 0
-Total memory bits : 0
-Embedded Multiplier 9-bit elements : 0
-Total PLLs : 0
+Total logic elements : N/A until Partition Merge
+    Total combinational functions : N/A until Partition Merge
+    Dedicated logic registers : N/A until Partition Merge
+Total registers : N/A until Partition Merge
+Total pins : N/A until Partition Merge
+Total virtual pins : N/A until Partition Merge
+Total memory bits : N/A until Partition Merge
+Embedded Multiplier 9-bit elements : N/A until Partition Merge
+Total PLLs : N/A until Partition Merge
