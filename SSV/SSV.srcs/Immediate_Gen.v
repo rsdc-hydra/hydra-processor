@@ -13,7 +13,7 @@ always @(instruction_) begin
     case(opcode)
         7'd3:imm = {{20{instruction_[31]}},instruction_[31:20]};
         7'd35:imm = {{20{instruction_[31]}},instruction_[31:25],instruction_[11:7]};
-        7'd99:imm = {{19{instruction_[31]}},instruction_[7],instruction_[30:25],instruction_[11:8],1'b0};
+        7'd99:imm = {{20{instruction_[31]}},instruction_[7],instruction_[30:25],instruction_[11:8]};
         default:imm = 32'b0;
     endcase
 end
