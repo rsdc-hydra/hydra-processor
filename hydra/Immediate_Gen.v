@@ -2,14 +2,13 @@
 //`include "Parameters.v"
 
 module Immediate_Gen (
-    input clk,
     input [32-1:0] instruction_,
     output [32-1:0] immediate
 );
 
 reg [6:0] opcode;
 reg [32-1:0] imm;
-always @(immediate) begin
+always @(instruction_) begin
     opcode = instruction_[6:0];
     case(opcode)
         7'd3:imm <= {{20{instruction_[31]}},instruction_[31:20]};
