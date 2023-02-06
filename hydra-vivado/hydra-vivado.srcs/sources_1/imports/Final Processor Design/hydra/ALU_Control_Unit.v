@@ -20,12 +20,12 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module ALU_Control_Unit(alu_cnt,alu_op,opcode);
+module ALU_Control_Unit(alu_cnt,alu_op,alu_opcode);
     output reg [2:0] alu_cnt;
     input [1:0] alu_op;
-    input [3:0] opcode;
+    input [3:0] alu_opcode;
     wire [5:0] alucontrol_in;
-    assign alucontrol_in ={alu_op,opcode};
+    assign alucontrol_in ={alu_op,alu_opcode};
     always @(alucontrol_in)
         casex (alucontrol_in)
             6'b00xxxx: alu_cnt=3'b000;
