@@ -47,5 +47,5 @@ case(alu_control)
 default: result=a+b;
 endcase
 end
-assign zero=(result==32'd0) ? 1'b1: 1'b0;
+assign zero=(result==32'd0) ? 1'b1: 1'b0; 
 endmodule
