@@ -20,22 +20,23 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module Program_counter(reset,inc,regin,load,clk,regout);
+module Program_counter(reset,br,Imm,zero,clk,regout);
 
-input [31:0] regin;
-input reset,inc,load,clk;
+input [31:0] Imm;
+input reset,br,zero,clk;
 output reg [31:0] regout;
 
+wire 	 branch;  
+assign branch = br & zero;
 
 always @(posedge clk) begin
     if (reset)
         regout = 32'b0;
-    else if (load) begin
-        case (inc)
-            1'b0 : regout = regin;
-            1'b1 : regout = regout + 4;
+    else 
+        case (branch)
+            1'b0 : regout = regout +4;
+            1'b1 : regout = Imm;
         endcase
-    end 
 end
 
 
