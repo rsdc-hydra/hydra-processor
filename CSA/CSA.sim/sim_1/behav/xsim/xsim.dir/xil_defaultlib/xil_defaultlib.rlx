@@ -1,0 +1,11 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/CSA/CSA.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/CSA/CSA.srcs/sim_1/new/Data_Mem_Tb.v,1675428502,verilog,,,,Data_Mem_Tb,,,,,,,,
+M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/CSA/CSA.srcs/sim_1/new/Ins_Mem_Tb.v,1675413524,verilog,,,,Ins_Mem_Tb,,,,,,,,
+M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/CSA/CSA.srcs/sim_1/new/Reg_File_Tb.v,1675424711,verilog,,,,Reg_File_Tb,,,,,,,,
+M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/CSA/CSA.srcs/sources_1/new/Data_Mem.v,1675425538,verilog,,M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/CSA/CSA.srcs/sim_1/new/Data_Mem_Tb.v,,Data_Mem,,,,,,,,
+M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/CSA/CSA.srcs/sources_1/new/Ins_Mem.v,1675423723,verilog,,M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/CSA/CSA.srcs/sim_1/new/Ins_Mem_Tb.v,,Ins_Mem,,,,,,,,
+M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/CSA/CSA.srcs/sources_1/new/Reg_File.v,1675409976,verilog,,M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/CSA/CSA.srcs/sim_1/new/Reg_File_Tb.v,,Reg_File,,,,,,,,

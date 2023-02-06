@@ -1,8 +1,7 @@
-*.*
+
 
 !.gitignore
 
-!*/
-!*.v
+
 
 Assembler
