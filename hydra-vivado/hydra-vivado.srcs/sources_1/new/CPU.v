@@ -24,7 +24,21 @@ module CPU #(parameter WIDTH = 32,parameter MEM_SIZE=5,parameter REG_FILE_SIZE=5
     input clk
     );
 
-   wire [WIDTH-1:0] pc,ins;
+    wire branch,zero;
+    wire [WIDTH-1:0] imm;
+    wire [WIDTH-1:0] pc;
+    wire [WIDTH-1:0] pc_next;
+
+    PC_Unit pc_unit(
+        .clk(clk),
+        .imm(imm),
+        .branch(branch),
+        .zero(zero),
+        .pc(pc),
+        .pc_next(pc_next)
+    );
+
+   wire [WIDTH-1:0] ins;
    Ins_Mem ins_mem(
        .pc(pc),
        .ins(ins)
@@ -50,9 +64,6 @@ module CPU #(parameter WIDTH = 32,parameter MEM_SIZE=5,parameter REG_FILE_SIZE=5
         .read_reg_data_1(read_reg_data_1),
         .read_reg_data_2(read_reg_data_2)
     );
-
-   
-    wire [WIDTH-1:0] imm;
 
     Immediate_Gen imm_gen(
         .ins(ins),
@@ -118,7 +129,7 @@ module CPU #(parameter WIDTH = 32,parameter MEM_SIZE=5,parameter REG_FILE_SIZE=5
     );
 
     wire [6:0] opcode;
-    wire branch,jump;
+    wire jump;
 
     assign opcode=ins[6:0];
     
@@ -133,9 +144,5 @@ module CPU #(parameter WIDTH = 32,parameter MEM_SIZE=5,parameter REG_FILE_SIZE=5
         .branch(branch),
         .jump(jump)
     );
-
-
-
-
 
 endmodule
