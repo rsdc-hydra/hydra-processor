@@ -9,3 +9,153 @@
 # Log file: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-vivado/vivado.log
 # Journal file: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-vivado\vivado.jou
 #-----------------------------------------------------------
+start_gui
+open_project {M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-vivado/hydra-vivado.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-vivado'
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Programs/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:10 . Memory (MB): peak = 764.777 ; gain = 142.488
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open {M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-vivado/hydra-vivado.srcs/sim_1/new/CPU_Tb.v} w ]
+add_files -fileset sim_1 {{M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-vivado/hydra-vivado.srcs/sim_1/new/CPU_Tb.v}}
+update_compile_order -fileset sim_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open {M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-vivado/hydra-vivado.srcs/sim_1/new/program.mem} w ]
+add_files -fileset sim_1 {{M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-vivado/hydra-vivado.srcs/sim_1/new/program.mem}}
+set_property top CPU_Tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-vivado/hydra-vivado.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU_Tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-vivado/hydra-vivado.sim/sim_1/behav/xsim/program.mem'
+INFO: [SIM-utils-43] Exported 'M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-vivado/hydra-vivado.sim/sim_1/behav/xsim/program.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-vivado/hydra-vivado.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_Tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-vivado/hydra-vivado.srcs/sources_1/imports/Final Processor Design/hydra/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-vivado/hydra-vivado.srcs/sources_1/imports/Final Processor Design/hydra/ALU_Control_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_Control_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-vivado/hydra-vivado.srcs/sources_1/new/CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+WARNING: [VRFC 10-3248] data object 'zero' is already declared [M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-vivado/hydra-vivado.srcs/sources_1/new/CPU.v:78]
+ERROR: [VRFC 10-3703] second declaration of 'zero' ignored [M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-vivado/hydra-vivado.srcs/sources_1/new/CPU.v:78]
+INFO: [VRFC 10-2458] undeclared symbol alu_src, assumed default net type wire [M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-vivado/hydra-vivado.srcs/sources_1/new/CPU.v:83]
+INFO: [VRFC 10-2458] undeclared symbol mem_to_reg, assumed default net type wire [M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-vivado/hydra-vivado.srcs/sources_1/new/CPU.v:127]
+ERROR: [VRFC 10-2865] module 'CPU' ignored due to previous errors [M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-vivado/hydra-vivado.srcs/sources_1/new/CPU.v:23]
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-99] Step results log file:'M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-vivado/hydra-vivado.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-vivado/hydra-vivado.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 802.387 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-vivado/hydra-vivado.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU_Tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-vivado/hydra-vivado.sim/sim_1/behav/xsim/program.mem'
+INFO: [SIM-utils-43] Exported 'M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-vivado/hydra-vivado.sim/sim_1/behav/xsim/program.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-vivado/hydra-vivado.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_Tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-vivado/hydra-vivado.srcs/sources_1/imports/Final Processor Design/hydra/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-vivado/hydra-vivado.srcs/sources_1/imports/Final Processor Design/hydra/ALU_Control_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_Control_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-vivado/hydra-vivado.srcs/sources_1/new/CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [VRFC 10-2458] undeclared symbol alu_src, assumed default net type wire [M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-vivado/hydra-vivado.srcs/sources_1/new/CPU.v:83]
+INFO: [VRFC 10-2458] undeclared symbol mem_to_reg, assumed default net type wire [M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-vivado/hydra-vivado.srcs/sources_1/new/CPU.v:127]
+INFO: [VRFC 10-2263] Analyzing Verilog file "M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-vivado/hydra-vivado.srcs/sources_1/imports/Final Processor Design/hydra/Control_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-vivado/hydra-vivado.srcs/sources_1/imports/Final Processor Design/CSA/CSA.srcs/sources_1/new/Data_Mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Data_Mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-vivado/hydra-vivado.srcs/sources_1/imports/Final Processor Design/SSV/SSV.srcs/Immediate_Gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Immediate_Gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-vivado/hydra-vivado.srcs/sources_1/imports/Final Processor Design/CSA/CSA.srcs/sources_1/new/Ins_Mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ins_Mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-vivado/hydra-vivado.srcs/sources_1/imports/Final Processor Design/SSV/SSV.srcs/Mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-vivado/hydra-vivado.srcs/sources_1/new/PC_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-vivado/hydra-vivado.srcs/sources_1/imports/Final Processor Design/CSA/CSA.srcs/sources_1/new/Reg_File.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Reg_File
+INFO: [VRFC 10-2263] Analyzing Verilog file "M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-vivado/hydra-vivado.srcs/sim_1/new/CPU_Tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_Tb
+ERROR: [VRFC 10-2989] 'WIDTH' is not declared [M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-vivado/hydra-vivado.srcs/sim_1/new/CPU_Tb.v:26]
+ERROR: [VRFC 10-1775] range must be bounded by constant expressions [M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-vivado/hydra-vivado.srcs/sim_1/new/CPU_Tb.v:26]
+ERROR: [VRFC 10-2989] 'WIDTH' is not declared [M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-vivado/hydra-vivado.srcs/sim_1/new/CPU_Tb.v:27]
+ERROR: [VRFC 10-1775] range must be bounded by constant expressions [M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-vivado/hydra-vivado.srcs/sim_1/new/CPU_Tb.v:27]
+ERROR: [VRFC 10-2865] module 'CPU_Tb' ignored due to previous errors [M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-vivado/hydra-vivado.srcs/sim_1/new/CPU_Tb.v:23]
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 805.094 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-99] Step results log file:'M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-vivado/hydra-vivado.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-vivado/hydra-vivado.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 805.094 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-vivado/hydra-vivado.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU_Tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-vivado/hydra-vivado.sim/sim_1/behav/xsim/program.mem'
+INFO: [SIM-utils-43] Exported 'M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-vivado/hydra-vivado.sim/sim_1/behav/xsim/program.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-vivado/hydra-vivado.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_Tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-vivado/hydra-vivado.srcs/sources_1/imports/Final Processor Design/hydra/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-vivado/hydra-vivado.srcs/sources_1/imports/Final Processor Design/hydra/ALU_Control_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_Control_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-vivado/hydra-vivado.srcs/sources_1/new/CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [VRFC 10-2458] undeclared symbol alu_src, assumed default net type wire [M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-vivado/hydra-vivado.srcs/sources_1/new/CPU.v:83]
+INFO: [VRFC 10-2458] undeclared symbol mem_to_reg, assumed default net type wire [M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-vivado/hydra-vivado.srcs/sources_1/new/CPU.v:127]
+INFO: [VRFC 10-2263] Analyzing Verilog file "M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-vivado/hydra-vivado.srcs/sources_1/imports/Final Processor Design/hydra/Control_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-vivado/hydra-vivado.srcs/sources_1/imports/Final Processor Design/CSA/CSA.srcs/sources_1/new/Data_Mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Data_Mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-vivado/hydra-vivado.srcs/sources_1/imports/Final Processor Design/SSV/SSV.srcs/Immediate_Gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Immediate_Gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-vivado/hydra-vivado.srcs/sources_1/imports/Final Processor Design/CSA/CSA.srcs/sources_1/new/Ins_Mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ins_Mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-vivado/hydra-vivado.srcs/sources_1/imports/Final Processor Design/SSV/SSV.srcs/Mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-vivado/hydra-vivado.srcs/sources_1/new/PC_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-vivado/hydra-vivado.srcs/sources_1/imports/Final Processor Design/CSA/CSA.srcs/sources_1/new/Reg_File.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Reg_File
+INFO: [VRFC 10-2263] Analyzing Verilog file "M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-vivado/hydra-vivado.srcs/sim_1/new/CPU_Tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_Tb
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-vivado/hydra-vivado.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Programs/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 16e0d38d4bd94e0983a2e16514bfbeed --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_Tb_behav xil_defaultlib.CPU_Tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-3180] cannot find port 'in0' on this module [M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-vivado/hydra-vivado.srcs/sources_1/new/CPU.v:129]
+ERROR: [VRFC 10-3180] cannot find port 'in1' on this module [M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-vivado/hydra-vivado.srcs/sources_1/new/CPU.v:128]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-99] Step results log file:'M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-vivado/hydra-vivado.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-vivado/hydra-vivado.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 805.094 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Feb  7 23:33:11 2023...
