@@ -21,12 +21,14 @@
 
 
 module CPU #(parameter WIDTH = 32,parameter MEM_SIZE=5,parameter REG_FILE_SIZE=5) (
-    input clk
+    input clk,
+    output [WIDTH-1:0] pc,
+    output [WIDTH-1:0] ins
     );
 
     wire branch,zero;
     wire [WIDTH-1:0] imm;
-    wire [WIDTH-1:0] pc;
+    // wire [WIDTH-1:0] pc;
     wire [WIDTH-1:0] pc_next;
 
     PC_Unit pc_unit(
@@ -38,7 +40,7 @@ module CPU #(parameter WIDTH = 32,parameter MEM_SIZE=5,parameter REG_FILE_SIZE=5
         .pc_next(pc_next)
     );
 
-   wire [WIDTH-1:0] ins;
+//    wire [WIDTH-1:0] ins;
    Ins_Mem ins_mem(
        .pc(pc),
        .ins(ins)
@@ -73,7 +75,7 @@ module CPU #(parameter WIDTH = 32,parameter MEM_SIZE=5,parameter REG_FILE_SIZE=5
     wire [WIDTH-1:0] alu_input_a,alu_input_b;
     wire [2:0] alu_control;
     wire [WIDTH-1:0] alu_result;
-    wire  zero;
+    
 
 
 

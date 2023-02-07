@@ -1,0 +1,19 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../hydra-vivado.srcs/sources_1/imports/Final Processor Design/hydra/ALU.v" \
+"../../../../hydra-vivado.srcs/sources_1/imports/Final Processor Design/hydra/ALU_Control_Unit.v" \
+"../../../../hydra-vivado.srcs/sources_1/new/CPU.v" \
+"../../../../hydra-vivado.srcs/sources_1/imports/Final Processor Design/hydra/Control_Unit.v" \
+"../../../../hydra-vivado.srcs/sources_1/imports/Final Processor Design/CSA/CSA.srcs/sources_1/new/Data_Mem.v" \
+"../../../../hydra-vivado.srcs/sources_1/imports/Final Processor Design/SSV/SSV.srcs/Immediate_Gen.v" \
+"../../../../hydra-vivado.srcs/sources_1/imports/Final Processor Design/CSA/CSA.srcs/sources_1/new/Ins_Mem.v" \
+"../../../../hydra-vivado.srcs/sources_1/imports/Final Processor Design/SSV/SSV.srcs/Mux.v" \
+"../../../../hydra-vivado.srcs/sources_1/new/PC_Unit.v" \
+"../../../../hydra-vivado.srcs/sources_1/imports/Final Processor Design/CSA/CSA.srcs/sources_1/new/Reg_File.v" \
+"../../../../hydra-vivado.srcs/sim_1/new/CPU_Tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
