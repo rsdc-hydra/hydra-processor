@@ -21,7 +21,7 @@
 
 
 module CPU #(parameter WIDTH = 32,parameter MEM_SIZE=5,parameter REG_FILE_SIZE=5) (
-    input clk;
+    input clk
     );
 
    wire [WIDTH-1:0] pc,ins;
@@ -99,7 +99,7 @@ module CPU #(parameter WIDTH = 32,parameter MEM_SIZE=5,parameter REG_FILE_SIZE=5
     );
 
     wire mem_write,mem_read;
-    wire [WIDTH-1:0] read_data
+    wire [WIDTH-1:0] read_data;
 
     Data_Mem data_mem(
         .clk(clk),
@@ -115,7 +115,7 @@ module CPU #(parameter WIDTH = 32,parameter MEM_SIZE=5,parameter REG_FILE_SIZE=5
         .in1(read_data),
         .in0(alu_result),
         .out(write_reg_data)
-    )
+    );
 
     wire [6:0] opcode;
     wire branch,jump;
