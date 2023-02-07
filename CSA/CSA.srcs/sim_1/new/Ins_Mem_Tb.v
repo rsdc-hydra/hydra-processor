@@ -20,19 +20,19 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module Ins_Mem_Tb #(parameter WIDTH = 32) (
+module Ins_Mem_Tb #(parameter WIDTH = 32,parameter MEM_SIZE=5) (
 
     );
     
 reg [WIDTH-1:0] pc;
+reg [WIDTH-1:0] mem [2**MEM_SIZE-1:0];
 wire [WIDTH-1:0] ins;
 
 Ins_Mem ins_mem(pc,ins);
 
 integer i;
-initial 
-begin
-    
+initial begin
+    $readmemh("program.mem",mem);
     pc=0;
     for(i=0;i<6;i=i+1) begin
         pc=i;

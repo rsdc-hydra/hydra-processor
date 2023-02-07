@@ -1,0 +1,35 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Feb  7 22:57:46 2023
+# Process ID: 11468
+# Current directory: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/CSA
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13516 M:\Academics\Sem5\WorkPlace\Circuits and Systems Design\Digital\Final Processor Design\CSA\CSA.xpr
+# Log file: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/CSA/vivado.log
+# Journal file: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/CSA\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/CSA/CSA.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/CSA'
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Programs/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:23 ; elapsed = 00:00:12 . Memory (MB): peak = 786.957 ; gain = 173.984
+update_compile_order -fileset sources_1
+close_project
+open_project {M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-vivado/hydra-vivado.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-vivado'
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Programs/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 832.102 ; gain = 0.000
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Feb  7 23:08:54 2023...

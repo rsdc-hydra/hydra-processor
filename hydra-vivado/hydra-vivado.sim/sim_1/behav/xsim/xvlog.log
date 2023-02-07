@@ -1,6 +1,4 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-vivado/hydra-vivado.srcs/sources_1/imports/Final Processor Design/CSA/CSA.srcs/sources_1/new/Reg_File.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Reg_File
-INFO: [VRFC 10-2263] Analyzing Verilog file "M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-vivado/hydra-vivado.srcs/sim_1/imports/new/Reg_File_Tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Reg_File_Tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-vivado/hydra-vivado.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-vivado/hydra-vivado.srcs/sources_1/new/PC_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-vivado/hydra-vivado.srcs/sim_1/new/PC_Unit_Tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_Unit_Tb
