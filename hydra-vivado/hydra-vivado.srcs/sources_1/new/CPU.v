@@ -23,11 +23,16 @@
 module CPU #(parameter WIDTH = 32,parameter MEM_SIZE=5,parameter REG_FILE_SIZE=5) (
     input clk,
     output [WIDTH-1:0] pc,
-    output [WIDTH-1:0] ins
+    output [WIDTH-1:0] ins,
+    output [WIDTH-1:0] write_reg_data,
+    output [WIDTH-1:0] alu_input_a,alu_input_b,
+    output [WIDTH-1:0] imm,
+    output alu_src,
+    output [6:0] opcode
     );
 
     wire branch,zero;
-    wire [WIDTH-1:0] imm;
+    // wire [WIDTH-1:0] imm;
     // wire [WIDTH-1:0] pc;
     wire [WIDTH-1:0] pc_next;
 
@@ -48,7 +53,7 @@ module CPU #(parameter WIDTH = 32,parameter MEM_SIZE=5,parameter REG_FILE_SIZE=5
 
     wire reg_write;
     wire [REG_FILE_SIZE-1:0] read_reg_addr_1,read_reg_addr_2,write_reg_addr;
-	wire [WIDTH-1:0] write_reg_data;
+	// wire [WIDTH-1:0] write_reg_data;
     wire [WIDTH-1:0] read_reg_data_1,read_reg_data_2;
 
     assign read_reg_addr_1=ins[19:15];
@@ -72,13 +77,15 @@ module CPU #(parameter WIDTH = 32,parameter MEM_SIZE=5,parameter REG_FILE_SIZE=5
         .imm(imm)
     );
 
-    wire [WIDTH-1:0] alu_input_a,alu_input_b;
+    // wire [WIDTH-1:0] alu_input_a,alu_input_b;
     wire [2:0] alu_control;
     wire [WIDTH-1:0] alu_result;
+    
     
 
 
 
+    //Mux0
     Mux mux0(
         .sel(alu_src),
         .i0(read_reg_data_2),
@@ -103,6 +110,8 @@ module CPU #(parameter WIDTH = 32,parameter MEM_SIZE=5,parameter REG_FILE_SIZE=5
     //alu_control=>alu_cnt
     //result=>alu_result
 
+    assign alu_input_a=read_reg_data_1;
+
     ALU alu(
         .alu_input_a(alu_input_a),
         .alu_input_b(alu_input_b),
@@ -123,14 +132,16 @@ module CPU #(parameter WIDTH = 32,parameter MEM_SIZE=5,parameter REG_FILE_SIZE=5
         .read_data(read_data)
     );
 
-    Mux mux1(
+    
+    // Mux1
+   Mux mux1(
         .sel(mem_to_reg),
-        .in1(read_data),
-        .in0(alu_result),
+        .i0(alu_result),
+        .i1(read_data),
         .out(write_reg_data)
     );
 
-    wire [6:0] opcode;
+    // wire [6:0] opcode;
     wire jump;
 
     assign opcode=ins[6:0];

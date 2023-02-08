@@ -3,6 +3,20 @@ Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
 Running: C:/Programs/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 16e0d38d4bd94e0983a2e16514bfbeed --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_Tb_behav xil_defaultlib.CPU_Tb xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
-ERROR: [VRFC 10-3180] cannot find port 'in0' on this module [M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-vivado/hydra-vivado.srcs/sources_1/new/CPU.v:129]
-ERROR: [VRFC 10-3180] cannot find port 'in1' on this module [M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-vivado/hydra-vivado.srcs/sources_1/new/CPU.v:128]
-ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC_Unit
+Compiling module xil_defaultlib.Ins_Mem
+Compiling module xil_defaultlib.Reg_File
+Compiling module xil_defaultlib.Immediate_Gen
+Compiling module xil_defaultlib.Mux
+Compiling module xil_defaultlib.ALU_Control_Unit
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.Data_Mem
+Compiling module xil_defaultlib.Control_Unit
+Compiling module xil_defaultlib.CPU
+Compiling module xil_defaultlib.CPU_Tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CPU_Tb_behav

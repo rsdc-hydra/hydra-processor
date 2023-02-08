@@ -24,6 +24,18 @@ module Control_Unit(
     output reg[1:0] alu_op,
     output reg alu_src,mem_to_reg,reg_write,mem_read,mem_write,branch,jump
     );
+
+initial begin
+    alu_src=0;
+    mem_to_reg=0;
+    reg_write=0;
+    mem_read=0;
+    mem_write=0;
+    branch=0;
+    jump=0;
+    
+end
+
 always @(*) begin
     case(opcode)
         7'b0110011: // R-Type 
@@ -69,6 +81,17 @@ always @(*) begin
         branch = 1'b1;
         jump = 1'b0;
         alu_op = 2'b01;
+        end
+        7'b0010011: //I type - Immidiate operations
+        begin
+        alu_src = 1'b1;
+        mem_to_reg = 1'b0;
+        reg_write = 1'b1;
+        mem_read = 1'b0;
+        mem_write = 1'b0;
+        branch = 1'b0;
+        jump = 1'b0;
+        alu_op = 2'b11;
         end
     endcase
 end

@@ -26,6 +26,11 @@ module ALU(
     output reg [31:0] alu_result,
     output zero
     );
+
+initial begin
+    alu_result=0;
+end
+
 always @(*) begin
     case(alu_cnt)
         3'b000: alu_result= alu_input_a+alu_input_b;

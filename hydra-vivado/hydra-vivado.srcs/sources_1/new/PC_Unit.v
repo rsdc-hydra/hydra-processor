@@ -14,6 +14,7 @@ module PC_Unit #(parameter WIDTH = 32,parameter MEM_SIZE=5) (
     end
 
     always @ (posedge clk) begin
+        // #10;
         pc<=pc_next;
     end
 

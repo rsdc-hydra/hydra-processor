@@ -25,6 +25,11 @@ module CPU_Tb  #(parameter WIDTH = 32,parameter MEM_SIZE=5,parameter REG_FILE_SI
 reg clk;
 wire [WIDTH-1:0] pc;
 wire [WIDTH-1:0] ins;
+wire [WIDTH-1:0] write_reg_data;
+wire [WIDTH-1:0] alu_input_a,alu_input_b;
+wire [WIDTH-1:0] imm;
+wire alu_src;
+wire [6:0] opcode;
 
 parameter clk_period=20;
 
@@ -39,7 +44,13 @@ end
 CPU cpu(
     .clk(clk),
     .pc(pc),
-    .ins(ins)
+    .ins(ins),
+    .write_reg_data(write_reg_data),
+    .alu_input_a(alu_input_a),
+    .alu_input_b(alu_input_b),
+    .imm(imm),
+    .alu_src(alu_src),
+    .opcode(opcode)
 );
 
 endmodule
