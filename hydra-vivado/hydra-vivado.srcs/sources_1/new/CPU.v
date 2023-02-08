@@ -28,7 +28,8 @@ module CPU #(parameter WIDTH = 32,parameter MEM_SIZE=5,parameter REG_FILE_SIZE=5
     output [WIDTH-1:0] alu_input_a,alu_input_b,
     output [WIDTH-1:0] imm,
     output alu_src,
-    output [6:0] opcode
+    output [6:0] opcode,
+    output [WIDTH-1:0] test
     );
 
     wire branch,zero;
@@ -69,7 +70,8 @@ module CPU #(parameter WIDTH = 32,parameter MEM_SIZE=5,parameter REG_FILE_SIZE=5
         .write_reg_addr(write_reg_addr),
         .write_reg_data(write_reg_data),
         .read_reg_data_1(read_reg_data_1),
-        .read_reg_data_2(read_reg_data_2)
+        .read_reg_data_2(read_reg_data_2),
+        .test(test)
     );
 
     Immediate_Gen imm_gen(

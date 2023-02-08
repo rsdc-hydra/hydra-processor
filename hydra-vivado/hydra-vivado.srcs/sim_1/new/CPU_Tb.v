@@ -30,6 +30,7 @@ wire [WIDTH-1:0] alu_input_a,alu_input_b;
 wire [WIDTH-1:0] imm;
 wire alu_src;
 wire [6:0] opcode;
+wire [WIDTH-1:0] test;
 
 parameter clk_period=20;
 
@@ -50,7 +51,8 @@ CPU cpu(
     .alu_input_b(alu_input_b),
     .imm(imm),
     .alu_src(alu_src),
-    .opcode(opcode)
+    .opcode(opcode),
+    .test(test)
 );
 
 endmodule

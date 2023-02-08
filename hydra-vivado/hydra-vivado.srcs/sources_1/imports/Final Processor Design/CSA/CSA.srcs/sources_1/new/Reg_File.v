@@ -4,7 +4,8 @@ module  Reg_File #(parameter WIDTH = 32,parameter REG_FILE_SIZE=5) (
     input clk,reg_write,
     input [REG_FILE_SIZE-1:0] read_reg_addr_1,read_reg_addr_2,write_reg_addr,
 	input [WIDTH-1:0] write_reg_data,
-    output [WIDTH-1:0] read_reg_data_1,read_reg_data_2
+    output [WIDTH-1:0] read_reg_data_1,read_reg_data_2,
+    output [WIDTH-1:0] test
 );
 
 reg [WIDTH-1:0] regs [2**REG_FILE_SIZE-1:0];
@@ -23,5 +24,7 @@ always @ (posedge clk) begin
     if (reg_write)
         regs[write_reg_addr]<=write_reg_data;
 end
+
+assign test=regs[1];
     
 endmodule
