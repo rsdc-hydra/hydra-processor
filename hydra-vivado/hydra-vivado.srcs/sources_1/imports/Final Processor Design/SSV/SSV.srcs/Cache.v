@@ -3,7 +3,7 @@ module Cache  #(parameter WIDTH = 32,parameter MEM_SIZE=5) (
     output hit,
     input [WIDTH-1:0] addr,
     input [WIDTH-1:0] write_data [3:0],
-    output [WIDTH-1:0] read_data,
+    output [WIDTH-1:0] read_data
 );
 
 reg [31:0] cache_mem [15:0];
