@@ -21,31 +21,31 @@
 
 
 module ALU(
-    input [31:0] alu_input_a,alu_input_b,
-    input [2:0] alu_cnt,
-    output reg [31:0] alu_result,
+    input [31:0] a,b,
+    input signed [3:0] alu_control,
+    output reg signed [31:0] result,
     output zero
     );
-
-initial begin
-    alu_result=0;
+reg [31:0] A,B;
+always @(*)
+begin
+A=a;
+B=b;
+case(alu_control)
+4'b0000: result= a+b;//add
+4'b0001: result= a-b;//sub
+4'b0010: result= a^b;//XOR
+4'b0011: result= a|b;//OR
+4'b0100: result= a&b;//AND
+4'b0101: result=a<<b;//shift left Logical
+4'b0110: result=a>>b;//shift right logical
+4'b0111: result=a>>>b;//shift right arithmatic
+4'b1000: begin if (a<b) result=32'd1;else result=32'd0;end //set less than 
+4'b1001: begin if (a!=b) result=32'd0;else result=32'd1;end
+4'b1010: begin if (a<b) result=32'd0;else result=32'd1;end
+4'b1011: begin if (A<B) result=32'd1;else result=32'd0;end//set less than unsigned
+default: result=a+b;
+endcase
 end
-
-always @(*) begin
-    case(alu_cnt)
-        3'b000: alu_result= alu_input_a+alu_input_b;
-        3'b001: alu_result= alu_input_a-alu_input_b;
-        3'b010: alu_result= ~alu_input_a;
-        3'b011: alu_result=alu_input_a<<alu_input_b;
-        3'b100: alu_result=alu_input_a>>alu_input_b;
-        3'b101: alu_result=alu_input_a&alu_input_b;
-        3'b110: alu_result=alu_input_a|alu_input_b;
-        3'b111: begin 
-            if (alu_input_a<alu_input_b) alu_result=32'd1;
-            else alu_result=32'd0;
-            end
-        default: alu_result=alu_input_a+alu_input_b;
-    endcase
-end
-assign zero=(alu_result==16'd0) ? 1'b1: 1'b0;
+assign zero=(result==32'd0) ? 1'b1: 1'b0;
 endmodule
