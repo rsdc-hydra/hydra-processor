@@ -29,7 +29,9 @@ module CPU #(parameter WIDTH = 32,parameter MEM_SIZE=5,parameter REG_FILE_SIZE=5
     output [WIDTH-1:0] imm,
     output alu_src,
     output [6:0] opcode,
-    output [WIDTH-1:0] test
+    output [WIDTH-1:0] test,
+    output [3:0] alu_cnt,
+   output [5:0] alu_control_in
     );
 
     wire branch,zero;
@@ -95,7 +97,7 @@ module CPU #(parameter WIDTH = 32,parameter MEM_SIZE=5,parameter REG_FILE_SIZE=5
         .out(alu_input_b)
     );
 
-    wire  [2:0] alu_cnt;
+    // wire  [3:0] alu_cnt;
     wire [1:0] alu_op;
     wire [3:0] alu_opcode;
 
@@ -105,7 +107,8 @@ module CPU #(parameter WIDTH = 32,parameter MEM_SIZE=5,parameter REG_FILE_SIZE=5
     ALU_Control_Unit alu_control_unit(
         .alu_op(alu_op),
         .alu_opcode(alu_opcode),
-        .alu_cnt(alu_cnt)
+        .alu_cnt(alu_cnt),
+        .alu_control_in(alu_control_in)
     );
 
     // Dinuka : a,b=>alu_input_a,b
@@ -115,8 +118,8 @@ module CPU #(parameter WIDTH = 32,parameter MEM_SIZE=5,parameter REG_FILE_SIZE=5
     assign alu_input_a=read_reg_data_1;
 
     ALU alu(
-        .alu_input_a(alu_input_a),
-        .alu_input_b(alu_input_b),
+        .a(alu_input_a),
+        .b(alu_input_b),
         .alu_cnt(alu_cnt),
         .alu_result(alu_result),
         .zero(zero)

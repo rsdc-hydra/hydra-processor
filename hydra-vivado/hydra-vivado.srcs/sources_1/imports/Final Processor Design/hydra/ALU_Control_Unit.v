@@ -1,34 +1,14 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 02/03/2023 02:26:03 AM
-// Design Name: 
-// Module Name: alu_control_unit
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
 
-
-module alu_control_unit(alu_cnt,alu_op,ALU_OPCODE);
+module ALU_Control_Unit(alu_cnt,alu_op,alu_opcode,alu_control_in);
   output reg [3:0] alu_cnt;
   input [1:0] alu_op;
-  input [3:0] ALU_OPCODE;
-  wire [5:0] alucontrol_in;
-  assign alucontrol_in ={alu_op,ALU_OPCODE};
-  always @(alucontrol_in)
+  input [3:0] alu_opcode;
+  output [5:0] alu_control_in;
+  assign alu_control_in ={alu_op,alu_opcode};
+  always @(alu_control_in)
   begin
-  casex (alucontrol_in)
+  casex (alu_control_in)
   //I type and S type ALU control signals
   6'b00xxxx: alu_cnt=4'b0000;
   
