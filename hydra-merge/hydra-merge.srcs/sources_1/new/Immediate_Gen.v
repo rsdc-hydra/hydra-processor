@@ -1,26 +1,22 @@
-`timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 09.02.2023 20:44:48
-// Design Name: 
-// Module Name: Immediate_Gen
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
+`timescale 1ns/1ps
+//`include "Parameters.v"
 
+module Immediate_Gen (
+    input [32-1:0] ins,
+    output [32-1:0] imm
+);
 
-module Immediate_Gen(
-
-    );
+reg [6:0] opcode;
+reg [32-1:0] _imm;
+always @(ins) begin
+    opcode = ins[6:0];
+    case(opcode)
+        7'd19:_imm = {{20{ins[31]}},ins[31:20]};
+        7'd3:_imm = {{20{ins[31]}},ins[31:20]};
+        7'd35:_imm = {{20{ins[31]}},ins[31:25],ins[11:7]};
+        7'd99:_imm = {{20{ins[31]}},ins[7],ins[30:25],ins[11:8]};
+        default:_imm = 32'b0;
+    endcase
+end
+assign imm=_imm;
 endmodule
