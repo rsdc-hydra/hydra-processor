@@ -2,6 +2,6 @@
 
 !.gitignore
 
+Assembler/riscv-online-asm/*
+Assembler/RISCV-RV32I-Assembler/*
 
-
-Assembler

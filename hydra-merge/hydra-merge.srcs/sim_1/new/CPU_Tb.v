@@ -16,7 +16,7 @@ wire [3:0] alu_cnt;
 wire [5:0] alu_control_in;
 
 
-parameter clk_period=20;
+parameter clk_period=10;
 
 initial begin
     clk=0;
