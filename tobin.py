@@ -1,5 +1,5 @@
 
-filename="hydra-vivado/hydra-vivado.srcs/sim_1/new/program.mem"
+filename="hydra-merge\\hydra-merge.srcs\\sim_1\\new\\program.mem"
 with open(filename,'r') as fl:
     hex_lines=fl.read().splitlines()
     bin_line_splits=[]

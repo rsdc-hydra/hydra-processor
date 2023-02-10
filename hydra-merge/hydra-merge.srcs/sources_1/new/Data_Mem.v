@@ -1,7 +1,8 @@
 module Data_Mem  #(parameter WIDTH = 32,parameter MEM_SIZE=5) (
     input clk,mem_write,mem_read,
     input [WIDTH-1:0] addr,write_data,
-    output [WIDTH-1:0] read_data
+    output [WIDTH-1:0] read_data,
+    output [WIDTH-1:0] test
 );
 
 reg [WIDTH-1:0] mem [2**MEM_SIZE-1:0];
@@ -14,5 +15,6 @@ always @(posedge clk) begin
         mem[mem_addr]<=write_data;
 end
 
+assign test=mem[2];
 
 endmodule

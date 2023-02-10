@@ -21,7 +21,7 @@ begin
 end
 
 always @ (posedge clk) begin
-    if (reg_write)
+    if (reg_write == 1'b1 && write_reg_addr != 5'd0)
         regs[write_reg_addr]<=write_reg_data;
 end
 

@@ -1,0 +1,19 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../hydra-merge.srcs/sources_1/new/ALU.v" \
+"../../../../hydra-merge.srcs/sources_1/new/ALU_Control_Unit.v" \
+"../../../../hydra-merge.srcs/sources_1/new/CPU.v" \
+"../../../../hydra-merge.srcs/sources_1/new/Control_Unit.v" \
+"../../../../hydra-merge.srcs/sources_1/new/Data_Mem.v" \
+"../../../../hydra-merge.srcs/sources_1/new/Immediate_Gen.v" \
+"../../../../hydra-merge.srcs/sources_1/new/Ins_Mem.v" \
+"../../../../hydra-merge.srcs/sources_1/new/Mux.v" \
+"../../../../hydra-merge.srcs/sources_1/new/PC_Unit.v" \
+"../../../../hydra-merge.srcs/sources_1/new/Reg_File.v" \
+"../../../../hydra-merge.srcs/sim_1/new/CPU_Tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
