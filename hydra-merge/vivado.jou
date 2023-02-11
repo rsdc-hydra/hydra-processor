@@ -9,3 +9,9 @@
 # Log file: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-merge/vivado.log
 # Journal file: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-merge\vivado.jou
 #-----------------------------------------------------------
+start_gui
+open_project {M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-merge/hydra-merge.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+source CPU_Tb.tcl
+relaunch_sim
