@@ -72,8 +72,7 @@ module CPU #(parameter WIDTH = 32,parameter MEM_SIZE=5,parameter REG_FILE_SIZE=5
         .write_reg_addr(write_reg_addr),
         .write_reg_data(write_reg_data),
         .read_reg_data_1(read_reg_data_1),
-        .read_reg_data_2(read_reg_data_2),
-        .test(test)
+        .read_reg_data_2(read_reg_data_2)
     );
 
     Immediate_Gen imm_gen(
@@ -134,7 +133,8 @@ module CPU #(parameter WIDTH = 32,parameter MEM_SIZE=5,parameter REG_FILE_SIZE=5
         .mem_read(mem_read),
         .addr(alu_result),
         .write_data(read_reg_data_2),
-        .read_data(read_data)
+        .read_data(read_data),
+        .test(test)
     );
 
     

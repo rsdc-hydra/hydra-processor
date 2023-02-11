@@ -1,4 +1,4 @@
-module Data_Mem  #(parameter WIDTH = 32,parameter MEM_SIZE=5) (
+module Data_Mem  #(parameter WIDTH = 32,parameter MEM_SIZE=7) (
     input clk,mem_write,mem_read,
     input [WIDTH-1:0] addr,write_data,
     output [WIDTH-1:0] read_data,
@@ -15,6 +15,6 @@ always @(posedge clk) begin
         mem[mem_addr]<=write_data;
 end
 
-assign test=mem[2];
+assign test=mem[92];
 
 endmodule
