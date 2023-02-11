@@ -1,8 +1,8 @@
 module Data_Mem  #(parameter WIDTH = 32,parameter MEM_SIZE=7) (
     input clk,mem_write,mem_read,
-    input [WIDTH-1:0] addr,write_data,
-    output [WIDTH-1:0] read_data,
-    output [WIDTH-1:0] test
+    input [WIDTH-1:0] addr,
+    input [(WIDTH*4)-1:0] write_data,
+    output [(WIDTH*4)-1:0] read_data
 );
 
 reg [WIDTH-1:0] mem [2**MEM_SIZE-1:0][2**2-1:0];
