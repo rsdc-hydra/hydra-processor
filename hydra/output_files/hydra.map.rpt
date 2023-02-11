@@ -1,5 +1,5 @@
 Analysis & Synthesis report for hydra
-Sat Feb 11 19:04:14 2023
+Sat Feb 11 19:17:18 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -45,7 +45,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Feb 11 19:04:14 2023       ;
+; Analysis & Synthesis Status        ; Successful - Sat Feb 11 19:17:18 2023       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; hydra                                       ;
 ; Top-level Entity Name              ; CPU_Demo                                    ;
@@ -236,14 +236,22 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------+-------+----------+--------------+
 ; Port         ; Type  ; Severity ; Details      ;
 +--------------+-------+----------+--------------+
-; disp[23..22] ; Input ; Info     ; Stuck at VCC ;
+; disp[25..22] ; Input ; Info     ; Stuck at VCC ;
 ; disp[8..7]   ; Input ; Info     ; Stuck at VCC ;
-; disp[1..0]   ; Input ; Info     ; Stuck at VCC ;
-; disp[31..24] ; Input ; Info     ; Stuck at GND ;
-; disp[21..9]  ; Input ; Info     ; Stuck at GND ;
+; disp[4..1]   ; Input ; Info     ; Stuck at VCC ;
+; disp[21..20] ; Input ; Info     ; Stuck at GND ;
+; disp[18..15] ; Input ; Info     ; Stuck at GND ;
+; disp[13..9]  ; Input ; Info     ; Stuck at GND ;
 ; disp[6..5]   ; Input ; Info     ; Stuck at GND ;
-; disp[3..2]   ; Input ; Info     ; Stuck at GND ;
-; disp[4]      ; Input ; Info     ; Stuck at VCC ;
+; disp[31]     ; Input ; Info     ; Stuck at VCC ;
+; disp[30]     ; Input ; Info     ; Stuck at GND ;
+; disp[29]     ; Input ; Info     ; Stuck at VCC ;
+; disp[28]     ; Input ; Info     ; Stuck at GND ;
+; disp[27]     ; Input ; Info     ; Stuck at VCC ;
+; disp[26]     ; Input ; Info     ; Stuck at GND ;
+; disp[19]     ; Input ; Info     ; Stuck at VCC ;
+; disp[14]     ; Input ; Info     ; Stuck at VCC ;
+; disp[0]      ; Input ; Info     ; Stuck at GND ;
 +--------------+-------+----------+--------------+
 
 
@@ -277,7 +285,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Sat Feb 11 19:04:01 2023
+    Info: Processing started: Sat Feb 11 19:17:08 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off hydra -c hydra
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -311,7 +319,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file cpu_tb.
 Info (12021): Found 1 design units, including 1 entities, in source file digit.v
     Info (12023): Found entity 1: Digit File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Digit.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file digits.v
-    Info (12023): Found entity 1: Digits File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Digits.v Line: 8
+    Info (12023): Found entity 1: Digits File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Digits.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file clk_div.v
     Info (12023): Found entity 1: Clk_Div File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Clk_Div.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file cpu_demo.v
@@ -320,14 +328,14 @@ Warning (10236): Verilog HDL Implicit Net warning at CPU.v(144): created implici
 Warning (10222): Verilog HDL Parameter Declaration warning at CPU_Tb.v(19): Parameter Declaration in module "CPU_Tb" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Tb.v Line: 19
 Info (12127): Elaborating entity "CPU_Demo" for the top level hierarchy
 Info (12128): Elaborating entity "Digits" for hierarchy "Digits:digits" File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 27
-Info (12128): Elaborating entity "Digit" for hierarchy "Digits:digits|Digit:seg0" File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Digits.v Line: 23
+Info (12128): Elaborating entity "Digit" for hierarchy "Digits:digits|Digit:seg0" File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Digits.v Line: 17
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "HEX0[0]" is stuck at GND File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 3
-    Warning (13410): Pin "HEX0[1]" is stuck at GND File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 3
-    Warning (13410): Pin "HEX0[2]" is stuck at GND File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 3
+    Warning (13410): Pin "HEX0[1]" is stuck at VCC File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 3
+    Warning (13410): Pin "HEX0[2]" is stuck at VCC File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 3
     Warning (13410): Pin "HEX0[3]" is stuck at GND File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 3
-    Warning (13410): Pin "HEX0[4]" is stuck at VCC File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 3
-    Warning (13410): Pin "HEX0[5]" is stuck at VCC File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 3
+    Warning (13410): Pin "HEX0[4]" is stuck at GND File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 3
+    Warning (13410): Pin "HEX0[5]" is stuck at GND File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 3
     Warning (13410): Pin "HEX0[6]" is stuck at GND File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 3
     Warning (13410): Pin "HEX1[0]" is stuck at GND File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 4
     Warning (13410): Pin "HEX1[1]" is stuck at GND File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 4
@@ -343,20 +351,20 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "HEX2[4]" is stuck at VCC File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 5
     Warning (13410): Pin "HEX2[5]" is stuck at VCC File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 5
     Warning (13410): Pin "HEX2[6]" is stuck at VCC File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 5
-    Warning (13410): Pin "HEX3[0]" is stuck at GND File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 6
+    Warning (13410): Pin "HEX3[0]" is stuck at VCC File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 6
     Warning (13410): Pin "HEX3[1]" is stuck at GND File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 6
     Warning (13410): Pin "HEX3[2]" is stuck at GND File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 6
-    Warning (13410): Pin "HEX3[3]" is stuck at GND File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 6
-    Warning (13410): Pin "HEX3[4]" is stuck at GND File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 6
+    Warning (13410): Pin "HEX3[3]" is stuck at VCC File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 6
+    Warning (13410): Pin "HEX3[4]" is stuck at VCC File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 6
     Warning (13410): Pin "HEX3[5]" is stuck at GND File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 6
-    Warning (13410): Pin "HEX3[6]" is stuck at VCC File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 6
+    Warning (13410): Pin "HEX3[6]" is stuck at GND File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 6
     Warning (13410): Pin "HEX4[0]" is stuck at GND File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 7
     Warning (13410): Pin "HEX4[1]" is stuck at GND File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 7
     Warning (13410): Pin "HEX4[2]" is stuck at GND File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 7
     Warning (13410): Pin "HEX4[3]" is stuck at GND File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 7
     Warning (13410): Pin "HEX4[4]" is stuck at GND File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 7
     Warning (13410): Pin "HEX4[5]" is stuck at GND File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 7
-    Warning (13410): Pin "HEX4[6]" is stuck at VCC File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 7
+    Warning (13410): Pin "HEX4[6]" is stuck at GND File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 7
     Warning (13410): Pin "HEX5[0]" is stuck at GND File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 8
     Warning (13410): Pin "HEX5[1]" is stuck at VCC File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 8
     Warning (13410): Pin "HEX5[2]" is stuck at VCC File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 8
@@ -364,20 +372,20 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "HEX5[4]" is stuck at GND File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 8
     Warning (13410): Pin "HEX5[5]" is stuck at GND File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 8
     Warning (13410): Pin "HEX5[6]" is stuck at VCC File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 8
-    Warning (13410): Pin "HEX6[0]" is stuck at GND File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 9
-    Warning (13410): Pin "HEX6[1]" is stuck at GND File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 9
+    Warning (13410): Pin "HEX6[0]" is stuck at VCC File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 9
+    Warning (13410): Pin "HEX6[1]" is stuck at VCC File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 9
     Warning (13410): Pin "HEX6[2]" is stuck at GND File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 9
     Warning (13410): Pin "HEX6[3]" is stuck at GND File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 9
     Warning (13410): Pin "HEX6[4]" is stuck at GND File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 9
     Warning (13410): Pin "HEX6[5]" is stuck at GND File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 9
-    Warning (13410): Pin "HEX6[6]" is stuck at VCC File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 9
+    Warning (13410): Pin "HEX6[6]" is stuck at GND File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 9
     Warning (13410): Pin "HEX7[0]" is stuck at GND File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 11
     Warning (13410): Pin "HEX7[1]" is stuck at GND File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 11
     Warning (13410): Pin "HEX7[2]" is stuck at GND File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 11
-    Warning (13410): Pin "HEX7[3]" is stuck at GND File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 11
+    Warning (13410): Pin "HEX7[3]" is stuck at VCC File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 11
     Warning (13410): Pin "HEX7[4]" is stuck at GND File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 11
     Warning (13410): Pin "HEX7[5]" is stuck at GND File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 11
-    Warning (13410): Pin "HEX7[6]" is stuck at VCC File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 11
+    Warning (13410): Pin "HEX7[6]" is stuck at GND File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 11
 Info (144001): Generated suppressed messages file M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/output_files/hydra.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -388,9 +396,9 @@ Info (21057): Implemented 57 device resources after synthesis - the final resour
     Info (21059): Implemented 56 output pins
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 63 warnings
     Info: Peak virtual memory: 4735 megabytes
-    Info: Processing ended: Sat Feb 11 19:04:14 2023
-    Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:31
+    Info: Processing ended: Sat Feb 11 19:17:18 2023
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:24
 
 
 +------------------------------------------+

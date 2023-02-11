@@ -7,10 +7,20 @@ module CPU_Demo(
     output	[6:0] HEX4,
     output	[6:0] HEX5,
     output	[6:0] HEX6,	
-    output	[6:0] HEX7 
+    output	[6:0] HEX7,
+	 output [31:0] testR,
+	 output [31:0] testM
 );
 
-reg [31:0] disp=32'h00c00193;
+reg [31:0] disp;
+
+initial begin
+    disp=0;
+end
+
+always @(posedge clk) begin
+    disp=disp+1;
+end
 
 Digits digits(
     .disp(disp),
@@ -24,6 +34,20 @@ Digits digits(
     .HEX5(HEX5),
     .HEX6(HEX6),
     .HEX7(HEX7)
+);
+
+
+CPU cpu(
+    .clk(clk),
+    .testR(testR),
+    .testM(testM)
+);
+
+// assign disp=testR;
+
+Clk_Div clk_div(
+    .clk(clk),
+    .src_clk(src_clk)
 );
 
 endmodule
