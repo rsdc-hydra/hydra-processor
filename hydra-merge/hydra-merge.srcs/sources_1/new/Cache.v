@@ -8,21 +8,22 @@ module Cache  #(parameter WIDTH = 32,parameter MEM_SIZE=5) (
 reg [WIDTH-1:0] cache_mem [3:0][3:0];
 reg [WIDTH-1:0] victim_mem [0][3:0];
 
-reg [31:0] temp_mem [0][3:0];
-reg [31:0] temp_tag;
-
 reg [3:0] cache_valid;
 reg [31:0] cache_tag [3:0];
 reg victim_valid;
 reg [31:0] victim_tag;
+
+reg [31:0] temp_mem [0][3:0];
+reg [31:0] temp_tag;
 
 wire [31:0] cache_tag_ = addr[31:6];
 wire [3:0] cache_index = addr[5:2];
 wire [31:0] victim_tag_ = addr[31:4];
 wire [1:0] victim_index = addr[3:2];
 
-wire mem_write,mem_read;
-wire [WIDTH-1:0] read_data_,addr_,write_data_;
+wire mem_write, mem_read;
+wire [WIDTH-1:0] addr_,
+wire [(WIDTH*4)-1:0] read_data_, write_data_;
 
 Data_Mem data_mem(
     .clk(clk),
@@ -60,13 +61,13 @@ always @(posedge clk) begin
             // end
             cache_mem[cache_index >> 2] <= victim_mem;
             cache_tag[cache_index >> 2] <= cache_tag_;
-            cache_valid[cache_index>>2] <=1;
+            cache_valid[cache_index>>2] <= 1;
             read_data <= cache_mem[cache_index[3:2]][cache_index[1:0]];
         end else if (cache_valid[cache_index>>2]) begin
             // for (integer i = 0; i < 4; i = i + 1) begin
             //     victim_mem[i] <= cache_mem[((cache_index>>2)<<2)+i];
             // end
-            victim_mem <= cache_mem[cache_index[3:2]][cache_index[1:0]];
+            victim_mem <= cache_mem[cache_index >> 2];
             victim_tag <= ((cache_tag[cache_index >> 2] << 2) + cache_index[3:2]);
             victim_valid <= 1b'1;
             // for (integer i = 0; i < 4; i = i + 1) begin
@@ -76,7 +77,7 @@ always @(posedge clk) begin
             // end
             mem_read <=1;
             addr_ <= addr;
-            cache_mem[cache_index[3:2]][cache_index[1:0]] <= read_data_;
+            cache_mem[cache_index >> 2] <= read_data_;
             cache_tag[cache_index >> 2] <= cache_tag_;
             read_data <= cache_mem[cache_index[3:2]][cache_index[1:0]];
             //cache_tag[cache_index>>2] <= victim_tag[31:2];
@@ -88,9 +89,9 @@ always @(posedge clk) begin
             // end
             mem_read <= 1;
             addr_ <= addr;
-            cache_mem[cache_index[3:2]][cache_index[1:0]] <= read_data_;
+            cache_mem[cache_index >> 2] <= read_data_;
             cache_tag[cache_index >> 2] <= cache_tag_;
-            cache_valid[cache_index>>2] <=1;
+            cache_valid[cache_index>>2] <= 1;
             read_data <= cache_mem[cache_index[3:2]][cache_index[1:0]];
             // read_data <= cache_mem[cache_index];
             // cache_tag[cache_index>>2] <= victim_tag[31:2];
@@ -176,9 +177,9 @@ always @(posedge clk) begin
 
             mem_read <= 1;
             addr_ <= addr;
-            cache_mem[cache_index[3:2]][cache_index[1:0]] <= read_data_;
+            cache_mem[cache_index[3:2]] <= read_data_;
             cache_tag[cache_index >> 2] <= cache_tag_;
-            cache_valid[cache_index>>2] <=1;
+            cache_valid[cache_index>>2] <= 1;
 
             cache_mem[cache_index[3:2]][cache_index[1:0]] <= write_data;
 
@@ -201,7 +202,7 @@ always @(posedge clk) begin
         end else begin
             mem_read <= 1;
             addr_ <= addr;
-            cache_mem[cache_index[3:2]][cache_index[1:0]] <= read_data_;
+            cache_mem[cache_index[3:2]] <= read_data_;
             cache_tag[cache_index >> 2] <= cache_tag_;
             cache_valid[cache_index>>2] <=1;
 
