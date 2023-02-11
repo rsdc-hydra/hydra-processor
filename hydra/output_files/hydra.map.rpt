@@ -1,5 +1,5 @@
 Analysis & Synthesis report for hydra
-Thu Feb 02 20:43:26 2023
+Sat Feb 11 19:04:14 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -10,7 +10,15 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Port Connectivity Checks: "Digits:digits"
+ 10. Post-Synthesis Netlist Statistics for Top Partition
+ 11. Elapsed Time Per Partition
+ 12. Analysis & Synthesis Messages
+ 13. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -37,20 +45,20 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Thu Feb 02 20:43:25 2023           ;
+; Analysis & Synthesis Status        ; Successful - Sat Feb 11 19:04:14 2023       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; hydra                                       ;
-; Top-level Entity Name              ; Parameters                                  ;
+; Top-level Entity Name              ; CPU_Demo                                    ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; N/A until Partition Merge                   ;
-;     Total combinational functions  ; N/A until Partition Merge                   ;
-;     Dedicated logic registers      ; N/A until Partition Merge                   ;
-; Total registers                    ; N/A until Partition Merge                   ;
-; Total pins                         ; N/A until Partition Merge                   ;
-; Total virtual pins                 ; N/A until Partition Merge                   ;
-; Total memory bits                  ; N/A until Partition Merge                   ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
-; Total PLLs                         ; N/A until Partition Merge                   ;
+; Total logic elements               ; 0                                           ;
+;     Total combinational functions  ; 0                                           ;
+;     Dedicated logic registers      ; 0                                           ;
+; Total registers                    ; 0                                           ;
+; Total pins                         ; 57                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -60,7 +68,7 @@ https://fpgasoftware.intel.com/eula.
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                           ; EP4CE115F29C7      ;                    ;
-; Top-level entity name                                            ; Parameters         ; hydra              ;
+; Top-level entity name                                            ; CPU_Demo           ; hydra              ;
 ; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
@@ -156,26 +164,238 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                          ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                            ; Library ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------------------------------+---------+
+; Digit.v                          ; yes             ; User Verilog HDL File  ; M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Digit.v    ;         ;
+; Digits.v                         ; yes             ; User Verilog HDL File  ; M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Digits.v   ;         ;
+; CPU_Demo.v                       ; yes             ; User Verilog HDL File  ; M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v ;         ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------------------------------+---------+
+
+
++-------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary           ;
++---------------------------------------------+---------+
+; Resource                                    ; Usage   ;
++---------------------------------------------+---------+
+;                                             ;         ;
+; Total combinational functions               ; 0       ;
+; Logic element usage by number of LUT inputs ;         ;
+;     -- 4 input functions                    ; 0       ;
+;     -- 3 input functions                    ; 0       ;
+;     -- <=2 input functions                  ; 0       ;
+;                                             ;         ;
+; Logic elements by mode                      ;         ;
+;     -- normal mode                          ; 0       ;
+;     -- arithmetic mode                      ; 0       ;
+;                                             ;         ;
+; Total registers                             ; 0       ;
+;     -- Dedicated logic registers            ; 0       ;
+;     -- I/O registers                        ; 0       ;
+;                                             ;         ;
+; I/O pins                                    ; 57      ;
+;                                             ;         ;
+; Embedded Multiplier 9-bit elements          ; 0       ;
+;                                             ;         ;
+; Maximum fan-out node                        ; src_clk ;
+; Maximum fan-out                             ; 1       ;
+; Total fan-out                               ; 57      ;
+; Average fan-out                             ; 0.50    ;
++---------------------------------------------+---------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                      ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
+; |CPU_Demo                  ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 57   ; 0            ; |CPU_Demo           ; CPU_Demo    ; work         ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++------------------------------------------------+
+; Port Connectivity Checks: "Digits:digits"      ;
++--------------+-------+----------+--------------+
+; Port         ; Type  ; Severity ; Details      ;
++--------------+-------+----------+--------------+
+; disp[23..22] ; Input ; Info     ; Stuck at VCC ;
+; disp[8..7]   ; Input ; Info     ; Stuck at VCC ;
+; disp[1..0]   ; Input ; Info     ; Stuck at VCC ;
+; disp[31..24] ; Input ; Info     ; Stuck at GND ;
+; disp[21..9]  ; Input ; Info     ; Stuck at GND ;
+; disp[6..5]   ; Input ; Info     ; Stuck at GND ;
+; disp[3..2]   ; Input ; Info     ; Stuck at GND ;
+; disp[4]      ; Input ; Info     ; Stuck at VCC ;
++--------------+-------+----------+--------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 57                          ;
+; cycloneiii_lcell_comb ; 2                           ;
+;     normal            ; 2                           ;
+;         0 data inputs ; 2                           ;
+;                       ;                             ;
+; Max LUT depth         ; 0.00                        ;
+; Average LUT depth     ; 0.00                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Thu Feb 02 20:43:08 2023
+    Info: Processing started: Sat Feb 11 19:04:01 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off hydra -c hydra
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
-Info (12021): Found 1 design units, including 1 entities, in source file bcd7seg.v
-    Info (12023): Found entity 1: bcd7seg File: F:/CSD Processor Design/hydra-processor/hydra/bcd7seg.v Line: 1
-Error (10170): Verilog HDL syntax error at Reg_File.v(15) near text: "'d";  expecting ";". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: F:/CSD Processor Design/hydra-processor/hydra/Reg_File.v Line: 15
-Error (10112): Ignored design unit "Reg_File" at Reg_File.v(5) due to previous errors File: F:/CSD Processor Design/hydra-processor/hydra/Reg_File.v Line: 5
-Info (12021): Found 0 design units, including 0 entities, in source file reg_file.v
-Info (12021): Found 0 design units, including 0 entities, in source file parameters.v
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 2 errors, 1 warning
-    Error: Peak virtual memory: 4693 megabytes
-    Error: Processing ended: Thu Feb 02 20:43:26 2023
-    Error: Elapsed time: 00:00:18
-    Error: Total CPU time (on all processors): 00:00:42
+Info (12021): Found 1 design units, including 1 entities, in source file reg_file.v
+    Info (12023): Found entity 1: Reg_File File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Reg_File.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file test.v
+    Info (12023): Found entity 1: Test File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Test.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file test_tb.v
+    Info (12023): Found entity 1: Test_Tb File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Test_Tb.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file alu_control_unit.v
+    Info (12023): Found entity 1: ALU_Control_Unit File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/ALU_Control_Unit.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file alu.v
+    Info (12023): Found entity 1: ALU File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/ALU.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file control_unit.v
+    Info (12023): Found entity 1: Control_Unit File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Control_Unit.v Line: 22
+Info (12021): Found 1 design units, including 1 entities, in source file cpu.v
+    Info (12023): Found entity 1: CPU File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU.v Line: 23
+Info (12021): Found 1 design units, including 1 entities, in source file data_mem.v
+    Info (12023): Found entity 1: Data_Mem File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Data_Mem.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file immediate_gen.v
+    Info (12023): Found entity 1: Immediate_Gen File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Immediate_Gen.v Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file ins_mem.v
+    Info (12023): Found entity 1: Ins_Mem File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Ins_Mem.v Line: 3
+Warning (12090): Entity "Mux" obtained from "Mux.v" instead of from Quartus Prime megafunction library File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Mux.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file mux.v
+    Info (12023): Found entity 1: Mux File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Mux.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file pc_unit.v
+    Info (12023): Found entity 1: PC_Unit File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/PC_Unit.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file cpu_tb.v
+    Info (12023): Found entity 1: CPU_Tb File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Tb.v Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file digit.v
+    Info (12023): Found entity 1: Digit File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Digit.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file digits.v
+    Info (12023): Found entity 1: Digits File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Digits.v Line: 8
+Info (12021): Found 1 design units, including 1 entities, in source file clk_div.v
+    Info (12023): Found entity 1: Clk_Div File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Clk_Div.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file cpu_demo.v
+    Info (12023): Found entity 1: CPU_Demo File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at CPU.v(144): created implicit net for "mem_to_reg" File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU.v Line: 144
+Warning (10222): Verilog HDL Parameter Declaration warning at CPU_Tb.v(19): Parameter Declaration in module "CPU_Tb" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Tb.v Line: 19
+Info (12127): Elaborating entity "CPU_Demo" for the top level hierarchy
+Info (12128): Elaborating entity "Digits" for hierarchy "Digits:digits" File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 27
+Info (12128): Elaborating entity "Digit" for hierarchy "Digits:digits|Digit:seg0" File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Digits.v Line: 23
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "HEX0[0]" is stuck at GND File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 3
+    Warning (13410): Pin "HEX0[1]" is stuck at GND File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 3
+    Warning (13410): Pin "HEX0[2]" is stuck at GND File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 3
+    Warning (13410): Pin "HEX0[3]" is stuck at GND File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 3
+    Warning (13410): Pin "HEX0[4]" is stuck at VCC File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 3
+    Warning (13410): Pin "HEX0[5]" is stuck at VCC File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 3
+    Warning (13410): Pin "HEX0[6]" is stuck at GND File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 3
+    Warning (13410): Pin "HEX1[0]" is stuck at GND File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 4
+    Warning (13410): Pin "HEX1[1]" is stuck at GND File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 4
+    Warning (13410): Pin "HEX1[2]" is stuck at GND File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 4
+    Warning (13410): Pin "HEX1[3]" is stuck at GND File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 4
+    Warning (13410): Pin "HEX1[4]" is stuck at VCC File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 4
+    Warning (13410): Pin "HEX1[5]" is stuck at GND File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 4
+    Warning (13410): Pin "HEX1[6]" is stuck at GND File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 4
+    Warning (13410): Pin "HEX2[0]" is stuck at VCC File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 5
+    Warning (13410): Pin "HEX2[1]" is stuck at GND File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 5
+    Warning (13410): Pin "HEX2[2]" is stuck at GND File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 5
+    Warning (13410): Pin "HEX2[3]" is stuck at VCC File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 5
+    Warning (13410): Pin "HEX2[4]" is stuck at VCC File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 5
+    Warning (13410): Pin "HEX2[5]" is stuck at VCC File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 5
+    Warning (13410): Pin "HEX2[6]" is stuck at VCC File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 5
+    Warning (13410): Pin "HEX3[0]" is stuck at GND File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 6
+    Warning (13410): Pin "HEX3[1]" is stuck at GND File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 6
+    Warning (13410): Pin "HEX3[2]" is stuck at GND File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 6
+    Warning (13410): Pin "HEX3[3]" is stuck at GND File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 6
+    Warning (13410): Pin "HEX3[4]" is stuck at GND File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 6
+    Warning (13410): Pin "HEX3[5]" is stuck at GND File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 6
+    Warning (13410): Pin "HEX3[6]" is stuck at VCC File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 6
+    Warning (13410): Pin "HEX4[0]" is stuck at GND File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 7
+    Warning (13410): Pin "HEX4[1]" is stuck at GND File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 7
+    Warning (13410): Pin "HEX4[2]" is stuck at GND File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 7
+    Warning (13410): Pin "HEX4[3]" is stuck at GND File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 7
+    Warning (13410): Pin "HEX4[4]" is stuck at GND File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 7
+    Warning (13410): Pin "HEX4[5]" is stuck at GND File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 7
+    Warning (13410): Pin "HEX4[6]" is stuck at VCC File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 7
+    Warning (13410): Pin "HEX5[0]" is stuck at GND File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 8
+    Warning (13410): Pin "HEX5[1]" is stuck at VCC File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 8
+    Warning (13410): Pin "HEX5[2]" is stuck at VCC File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 8
+    Warning (13410): Pin "HEX5[3]" is stuck at GND File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 8
+    Warning (13410): Pin "HEX5[4]" is stuck at GND File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 8
+    Warning (13410): Pin "HEX5[5]" is stuck at GND File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 8
+    Warning (13410): Pin "HEX5[6]" is stuck at VCC File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 8
+    Warning (13410): Pin "HEX6[0]" is stuck at GND File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 9
+    Warning (13410): Pin "HEX6[1]" is stuck at GND File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 9
+    Warning (13410): Pin "HEX6[2]" is stuck at GND File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 9
+    Warning (13410): Pin "HEX6[3]" is stuck at GND File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 9
+    Warning (13410): Pin "HEX6[4]" is stuck at GND File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 9
+    Warning (13410): Pin "HEX6[5]" is stuck at GND File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 9
+    Warning (13410): Pin "HEX6[6]" is stuck at VCC File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 9
+    Warning (13410): Pin "HEX7[0]" is stuck at GND File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 11
+    Warning (13410): Pin "HEX7[1]" is stuck at GND File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 11
+    Warning (13410): Pin "HEX7[2]" is stuck at GND File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 11
+    Warning (13410): Pin "HEX7[3]" is stuck at GND File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 11
+    Warning (13410): Pin "HEX7[4]" is stuck at GND File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 11
+    Warning (13410): Pin "HEX7[5]" is stuck at GND File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 11
+    Warning (13410): Pin "HEX7[6]" is stuck at VCC File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 11
+Info (144001): Generated suppressed messages file M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/output_files/hydra.map.smsg
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "src_clk" File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 2
+Info (21057): Implemented 57 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 1 input pins
+    Info (21059): Implemented 56 output pins
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 63 warnings
+    Info: Peak virtual memory: 4735 megabytes
+    Info: Processing ended: Sat Feb 11 19:04:14 2023
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:31
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/output_files/hydra.map.smsg.
 
 

@@ -9,27 +9,278 @@ z2
 !i10f 100
 cModel Technology
 Z0 dM:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/simulation/modelsim
-vbcd7seg
-!s110 1675098658
+vALU
+Z1 !s110 1676118373
 !i10b 1
-!s100 SaXbP2I@2>^0:d0lKbQ9E3
-!s11b Dg1SIo80bB@j0V0VzS_@n1
-I;;AMo16ngS7`O>F1HAcg_0
-VDg1SIo80bB@j0V0VzS_@n1
+!s100 :0<YlTFXX11ec[cPUOX?Y1
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IOC[2bO[6[S:zFLQ5cR^W81
+Z3 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1675090360
-8M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/bcd7seg.v
-FM:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/bcd7seg.v
-!i122 0
-L0 1 22
-OV;L;2020.1;71
+w1676101857
+8M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/ALU.v
+FM:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/ALU.v
+!i122 2
+L0 3 31
+Z4 OV;L;2020.1;71
 r1
 !s85 0
 31
-!s108 1675098658.000000
-!s107 M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/bcd7seg.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra|M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/bcd7seg.v|
+Z5 !s108 1676118373.000000
+!s107 M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/ALU.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra|M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/ALU.v|
 !i113 1
-o-vlog01compat -work work
-!s92 -vlog01compat -work work {+incdir+M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra}
-tCvgOpt 0
+Z6 o-vlog01compat -work work
+Z7 !s92 -vlog01compat -work work {+incdir+M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra}
+Z8 tCvgOpt 0
+n@a@l@u
+vALU_Control_Unit
+R1
+!i10b 1
+!s100 M_[]VE:dcLLUPL0JQKi`Y1
+R2
+IW]<D[F<Z[44kJNek7_M5I1
+R3
+R0
+w1676101783
+8M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/ALU_Control_Unit.v
+FM:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/ALU_Control_Unit.v
+!i122 1
+L0 3 45
+R4
+r1
+!s85 0
+31
+R5
+!s107 M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/ALU_Control_Unit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra|M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/ALU_Control_Unit.v|
+!i113 1
+R6
+R7
+R8
+n@a@l@u_@control_@unit
+vControl_Unit
+R1
+!i10b 1
+!s100 CkD4P9lH=fMSELiAo^l>70
+R2
+InVWF``d9RI=l@nfLa]G_`3
+R3
+R0
+w1676101910
+8M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Control_Unit.v
+FM:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Control_Unit.v
+!i122 3
+L0 22 66
+R4
+r1
+!s85 0
+31
+R5
+!s107 M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Control_Unit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra|M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Control_Unit.v|
+!i113 1
+R6
+R7
+R8
+n@control_@unit
+vCPU
+Z9 !s110 1676118374
+!i10b 1
+!s100 VmM^izLQdnz7@eLM=>Nh?1
+R2
+Ii5MPGT2jWKS`[@g^JGFG63
+R3
+R0
+w1676102045
+8M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU.v
+FM:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU.v
+!i122 4
+L0 23 145
+R4
+r1
+!s85 0
+31
+Z10 !s108 1676118374.000000
+!s107 M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra|M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU.v|
+!i113 1
+R6
+R7
+R8
+n@c@p@u
+vCPU_Tb
+!s110 1676118375
+!i10b 1
+!s100 NeG@_=[ga0Dm_cKCGSezb3
+R2
+I_GkePejc:JNz7ie[b9FD20
+R3
+R0
+w1676104077
+8M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Tb.v
+FM:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Tb.v
+!i122 10
+L0 4 43
+R4
+r1
+!s85 0
+31
+R10
+!s107 M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra|M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Tb.v|
+!i113 1
+R6
+R7
+R8
+n@c@p@u_@tb
+vData_Mem
+R9
+!i10b 1
+!s100 ZlT0O@9_ZgB];JjCOf2nN1
+R2
+I<bdQlLjbDf7R<[FDj?OTM2
+R3
+R0
+w1676102070
+8M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Data_Mem.v
+FM:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Data_Mem.v
+!i122 5
+L0 1 20
+R4
+r1
+!s85 0
+31
+R10
+!s107 M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Data_Mem.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra|M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Data_Mem.v|
+!i113 1
+R6
+R7
+R8
+n@data_@mem
+vImmediate_Gen
+R9
+!i10b 1
+!s100 ?<PBK6iJH7EJ<di<D@SnO0
+R2
+IRY0[MZc0Z?0=UhmVhGPcd0
+R3
+R0
+w1676102099
+8M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Immediate_Gen.v
+FM:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Immediate_Gen.v
+!i122 6
+L0 4 19
+R4
+r1
+!s85 0
+31
+R10
+!s107 M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Immediate_Gen.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra|M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Immediate_Gen.v|
+!i113 1
+R6
+R7
+R8
+n@immediate_@gen
+vIns_Mem
+R9
+!i10b 1
+!s100 FzLZ]ZAT>HcH<SaGS0^^e2
+R2
+I075j@_aFaT3UmgE`<dF;72
+R3
+R0
+w1676118110
+8M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Ins_Mem.v
+FM:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Ins_Mem.v
+!i122 7
+L0 3 21
+R4
+r1
+!s85 0
+31
+R10
+!s107 M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Ins_Mem.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra|M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Ins_Mem.v|
+!i113 1
+R6
+R7
+R8
+n@ins_@mem
+vMux
+R9
+!i10b 1
+!s100 FZHkWc=nBR:Kf:;I?_7DL3
+R2
+Iz=BG5iLl8UIZ@61aA]YjG1
+R3
+R0
+w1676102163
+8M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Mux.v
+FM:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Mux.v
+!i122 8
+L0 1 10
+R4
+r1
+!s85 0
+31
+R10
+!s107 M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Mux.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra|M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Mux.v|
+!i113 1
+R6
+R7
+R8
+n@mux
+vPC_Unit
+R9
+!i10b 1
+!s100 dUnf2JAPWeC=?d>k<R?E@3
+R2
+I^[<:NQ>7@Fd5S69KUob3E2
+R3
+R0
+w1676102182
+8M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/PC_Unit.v
+FM:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/PC_Unit.v
+!i122 9
+L0 3 18
+R4
+r1
+!s85 0
+31
+R10
+!s107 M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/PC_Unit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra|M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/PC_Unit.v|
+!i113 1
+R6
+R7
+R8
+n@p@c_@unit
+vReg_File
+!s110 1676118372
+!i10b 1
+!s100 Ob8E`dkRNlbU:SS6]IZY=1
+R2
+Inz]0AVj2mokELPabOjnle1
+R3
+R0
+w1676104905
+8M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Reg_File.v
+FM:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Reg_File.v
+!i122 0
+L0 3 28
+R4
+r1
+!s85 0
+31
+!s108 1676118372.000000
+!s107 M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Reg_File.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra|M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Reg_File.v|
+!i113 1
+R6
+R7
+R8
+n@reg_@file

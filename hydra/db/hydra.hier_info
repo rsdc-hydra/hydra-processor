@@ -1,14 +1,263 @@
-|bcd7seg
+|CPU_Demo
+src_clk => ~NO_FANOUT~
+HEX0[0] <= Digits:digits.HEX0[0]
+HEX0[1] <= Digits:digits.HEX0[1]
+HEX0[2] <= Digits:digits.HEX0[2]
+HEX0[3] <= Digits:digits.HEX0[3]
+HEX0[4] <= Digits:digits.HEX0[4]
+HEX0[5] <= Digits:digits.HEX0[5]
+HEX0[6] <= Digits:digits.HEX0[6]
+HEX1[0] <= Digits:digits.HEX1[0]
+HEX1[1] <= Digits:digits.HEX1[1]
+HEX1[2] <= Digits:digits.HEX1[2]
+HEX1[3] <= Digits:digits.HEX1[3]
+HEX1[4] <= Digits:digits.HEX1[4]
+HEX1[5] <= Digits:digits.HEX1[5]
+HEX1[6] <= Digits:digits.HEX1[6]
+HEX2[0] <= Digits:digits.HEX2[0]
+HEX2[1] <= Digits:digits.HEX2[1]
+HEX2[2] <= Digits:digits.HEX2[2]
+HEX2[3] <= Digits:digits.HEX2[3]
+HEX2[4] <= Digits:digits.HEX2[4]
+HEX2[5] <= Digits:digits.HEX2[5]
+HEX2[6] <= Digits:digits.HEX2[6]
+HEX3[0] <= Digits:digits.HEX3[0]
+HEX3[1] <= Digits:digits.HEX3[1]
+HEX3[2] <= Digits:digits.HEX3[2]
+HEX3[3] <= Digits:digits.HEX3[3]
+HEX3[4] <= Digits:digits.HEX3[4]
+HEX3[5] <= Digits:digits.HEX3[5]
+HEX3[6] <= Digits:digits.HEX3[6]
+HEX4[0] <= Digits:digits.HEX4[0]
+HEX4[1] <= Digits:digits.HEX4[1]
+HEX4[2] <= Digits:digits.HEX4[2]
+HEX4[3] <= Digits:digits.HEX4[3]
+HEX4[4] <= Digits:digits.HEX4[4]
+HEX4[5] <= Digits:digits.HEX4[5]
+HEX4[6] <= Digits:digits.HEX4[6]
+HEX5[0] <= Digits:digits.HEX5[0]
+HEX5[1] <= Digits:digits.HEX5[1]
+HEX5[2] <= Digits:digits.HEX5[2]
+HEX5[3] <= Digits:digits.HEX5[3]
+HEX5[4] <= Digits:digits.HEX5[4]
+HEX5[5] <= Digits:digits.HEX5[5]
+HEX5[6] <= Digits:digits.HEX5[6]
+HEX6[0] <= Digits:digits.HEX6[0]
+HEX6[1] <= Digits:digits.HEX6[1]
+HEX6[2] <= Digits:digits.HEX6[2]
+HEX6[3] <= Digits:digits.HEX6[3]
+HEX6[4] <= Digits:digits.HEX6[4]
+HEX6[5] <= Digits:digits.HEX6[5]
+HEX6[6] <= Digits:digits.HEX6[6]
+HEX7[0] <= Digits:digits.HEX7[0]
+HEX7[1] <= Digits:digits.HEX7[1]
+HEX7[2] <= Digits:digits.HEX7[2]
+HEX7[3] <= Digits:digits.HEX7[3]
+HEX7[4] <= Digits:digits.HEX7[4]
+HEX7[5] <= Digits:digits.HEX7[5]
+HEX7[6] <= Digits:digits.HEX7[6]
+
+
+|CPU_Demo|Digits:digits
+disp[0] => inp0[0].IN1
+disp[1] => inp0[1].IN1
+disp[2] => inp0[2].IN1
+disp[3] => inp0[3].IN1
+disp[4] => inp1[0].IN1
+disp[5] => inp1[1].IN1
+disp[6] => inp1[2].IN1
+disp[7] => inp1[3].IN1
+disp[8] => inp2[0].IN1
+disp[9] => inp2[1].IN1
+disp[10] => inp2[2].IN1
+disp[11] => inp2[3].IN1
+disp[12] => inp3[0].IN1
+disp[13] => inp3[1].IN1
+disp[14] => inp3[2].IN1
+disp[15] => inp3[3].IN1
+disp[16] => inp4[0].IN1
+disp[17] => inp4[1].IN1
+disp[18] => inp4[2].IN1
+disp[19] => inp4[3].IN1
+disp[20] => inp5[0].IN1
+disp[21] => inp5[1].IN1
+disp[22] => inp5[2].IN1
+disp[23] => inp5[3].IN1
+disp[24] => inp6[0].IN1
+disp[25] => inp6[1].IN1
+disp[26] => inp6[2].IN1
+disp[27] => inp6[3].IN1
+disp[28] => inp7[0].IN1
+disp[29] => inp7[1].IN1
+disp[30] => inp7[2].IN1
+disp[31] => inp7[3].IN1
+HEX0[0] <= Digit:seg0.port1
+HEX0[1] <= Digit:seg0.port1
+HEX0[2] <= Digit:seg0.port1
+HEX0[3] <= Digit:seg0.port1
+HEX0[4] <= Digit:seg0.port1
+HEX0[5] <= Digit:seg0.port1
+HEX0[6] <= Digit:seg0.port1
+HEX1[0] <= Digit:seg1.port1
+HEX1[1] <= Digit:seg1.port1
+HEX1[2] <= Digit:seg1.port1
+HEX1[3] <= Digit:seg1.port1
+HEX1[4] <= Digit:seg1.port1
+HEX1[5] <= Digit:seg1.port1
+HEX1[6] <= Digit:seg1.port1
+HEX2[0] <= Digit:seg2.port1
+HEX2[1] <= Digit:seg2.port1
+HEX2[2] <= Digit:seg2.port1
+HEX2[3] <= Digit:seg2.port1
+HEX2[4] <= Digit:seg2.port1
+HEX2[5] <= Digit:seg2.port1
+HEX2[6] <= Digit:seg2.port1
+HEX3[0] <= Digit:seg3.port1
+HEX3[1] <= Digit:seg3.port1
+HEX3[2] <= Digit:seg3.port1
+HEX3[3] <= Digit:seg3.port1
+HEX3[4] <= Digit:seg3.port1
+HEX3[5] <= Digit:seg3.port1
+HEX3[6] <= Digit:seg3.port1
+HEX4[0] <= Digit:seg4.port1
+HEX4[1] <= Digit:seg4.port1
+HEX4[2] <= Digit:seg4.port1
+HEX4[3] <= Digit:seg4.port1
+HEX4[4] <= Digit:seg4.port1
+HEX4[5] <= Digit:seg4.port1
+HEX4[6] <= Digit:seg4.port1
+HEX5[0] <= Digit:seg5.port1
+HEX5[1] <= Digit:seg5.port1
+HEX5[2] <= Digit:seg5.port1
+HEX5[3] <= Digit:seg5.port1
+HEX5[4] <= Digit:seg5.port1
+HEX5[5] <= Digit:seg5.port1
+HEX5[6] <= Digit:seg5.port1
+HEX6[0] <= Digit:seg6.port1
+HEX6[1] <= Digit:seg6.port1
+HEX6[2] <= Digit:seg6.port1
+HEX6[3] <= Digit:seg6.port1
+HEX6[4] <= Digit:seg6.port1
+HEX6[5] <= Digit:seg6.port1
+HEX6[6] <= Digit:seg6.port1
+HEX7[0] <= Digit:seg7.port1
+HEX7[1] <= Digit:seg7.port1
+HEX7[2] <= Digit:seg7.port1
+HEX7[3] <= Digit:seg7.port1
+HEX7[4] <= Digit:seg7.port1
+HEX7[5] <= Digit:seg7.port1
+HEX7[6] <= Digit:seg7.port1
+
+
+|CPU_Demo|Digits:digits|Digit:seg0
 bcd[0] => Decoder0.IN3
 bcd[1] => Decoder0.IN2
 bcd[2] => Decoder0.IN1
 bcd[3] => Decoder0.IN0
-seg[0] << WideOr4.DB_MAX_OUTPUT_PORT_TYPE
-seg[1] << seg.DB_MAX_OUTPUT_PORT_TYPE
-seg[2] << Decoder0.DB_MAX_OUTPUT_PORT_TYPE
-seg[3] << WideOr3.DB_MAX_OUTPUT_PORT_TYPE
-seg[4] << WideOr2.DB_MAX_OUTPUT_PORT_TYPE
-seg[5] << WideOr1.DB_MAX_OUTPUT_PORT_TYPE
-seg[6] << WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+seg[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+seg[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+seg[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+seg[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+seg[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+seg[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CPU_Demo|Digits:digits|Digit:seg1
+bcd[0] => Decoder0.IN3
+bcd[1] => Decoder0.IN2
+bcd[2] => Decoder0.IN1
+bcd[3] => Decoder0.IN0
+seg[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+seg[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+seg[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+seg[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+seg[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+seg[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CPU_Demo|Digits:digits|Digit:seg2
+bcd[0] => Decoder0.IN3
+bcd[1] => Decoder0.IN2
+bcd[2] => Decoder0.IN1
+bcd[3] => Decoder0.IN0
+seg[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+seg[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+seg[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+seg[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+seg[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+seg[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CPU_Demo|Digits:digits|Digit:seg3
+bcd[0] => Decoder0.IN3
+bcd[1] => Decoder0.IN2
+bcd[2] => Decoder0.IN1
+bcd[3] => Decoder0.IN0
+seg[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+seg[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+seg[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+seg[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+seg[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+seg[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CPU_Demo|Digits:digits|Digit:seg4
+bcd[0] => Decoder0.IN3
+bcd[1] => Decoder0.IN2
+bcd[2] => Decoder0.IN1
+bcd[3] => Decoder0.IN0
+seg[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+seg[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+seg[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+seg[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+seg[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+seg[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CPU_Demo|Digits:digits|Digit:seg5
+bcd[0] => Decoder0.IN3
+bcd[1] => Decoder0.IN2
+bcd[2] => Decoder0.IN1
+bcd[3] => Decoder0.IN0
+seg[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+seg[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+seg[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+seg[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+seg[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+seg[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CPU_Demo|Digits:digits|Digit:seg6
+bcd[0] => Decoder0.IN3
+bcd[1] => Decoder0.IN2
+bcd[2] => Decoder0.IN1
+bcd[3] => Decoder0.IN0
+seg[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+seg[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+seg[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+seg[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+seg[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+seg[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CPU_Demo|Digits:digits|Digit:seg7
+bcd[0] => Decoder0.IN3
+bcd[1] => Decoder0.IN2
+bcd[2] => Decoder0.IN1
+bcd[3] => Decoder0.IN0
+seg[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+seg[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+seg[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+seg[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+seg[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+seg[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 
 
