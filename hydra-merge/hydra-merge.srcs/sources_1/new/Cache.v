@@ -153,7 +153,7 @@ always @(posedge clk) begin
 
             cache_mem[cache_index >> 2] <= victim_mem;
             cache_tag[cache_index >> 2] <= cache_tag_;
-            cache_valid[cache_index>>2] <=1;
+            cache_valid[cache_index>>2] <= 1;
 
             // for (integer i = 0; i < 4; i = i + 1) begin
             //     mem_write <=1;
@@ -173,33 +173,56 @@ always @(posedge clk) begin
             victim_mem <= {cache_mem[cache_index >> 2][0], cache_mem[cache_index >> 2][1], cache_mem[cache_index >> 2][2], cache_mem[cache_index >> 2][3]};
             victim_tag <= ((cache_tag[cache_index >> 2] << 2) + cache_index[3:2]);
             victim_valid <= 1b'1;
-            // victim_tag <= (cache_tag_<<2)+cache_index[1:0];
-            for (integer i = 0; i < 4; i = i + 1) begin
-                mem_read <=1;
-                addr_ <= (addr[31:2]<<2 + i);
-                cache_mem[((cache_index>>2)<<2)+i] <= read_data_[i];
-            end
-            cache_tag[cache_index>>2] <= victim_tag[31:2];
-            cache_mem[cache_index] <= write_data;
-            for (integer i = 0; i < 4; i = i + 1) begin
-                mem_write <=1;
-                addr_ <= (addr[31:2]<<2 + i);
-                write_data_ <= cache_mem[((cache_index>>2)<<2)+i];
-            end
-        end else begin
-            for (integer i = 0; i < 4; i = i + 1) begin
-                mem_read <=1;
-                addr_ <= (addr[31:2]<<2 + i);
-                cache_mem[((cache_index>>2)<<2)+i] <= read_data_[i];
-            end
-            cache_tag[cache_index>>2] <= victim_tag[31:2];
+
+            mem_read <= 1;
+            addr_ <= addr;
+            cache_mem[cache_index[3:2]][cache_index[1:0]] <= read_data_;
+            cache_tag[cache_index >> 2] <= cache_tag_;
             cache_valid[cache_index>>2] <=1;
-            cache_mem[cache_index] <= write_data;
-            for (integer i = 0; i < 4; i = i + 1) begin
-                mem_write <=1;
-                addr_ <= (addr[31:2]<<2 + i);
-                write_data_ <= cache_mem[((cache_index>>2)<<2)+i];
-            end
+
+            cache_mem[cache_index[3:2]][cache_index[1:0]] <= write_data;
+
+            mem_write <= 1;
+            addr_ <= addr;
+            write_data_ <= cache_mem[cache_index[3:2]];
+            // victim_tag <= (cache_tag_<<2)+cache_index[1:0];
+            // for (integer i = 0; i < 4; i = i + 1) begin
+            //     mem_read <=1;
+            //     addr_ <= (addr[31:2]<<2 + i);
+            //     cache_mem[((cache_index>>2)<<2)+i] <= read_data_[i];
+            // end
+            // cache_tag[cache_index>>2] <= victim_tag[31:2];
+            // cache_mem[cache_index] <= write_data;
+            // for (integer i = 0; i < 4; i = i + 1) begin
+            //     mem_write <=1;
+            //     addr_ <= (addr[31:2]<<2 + i);
+            //     write_data_ <= cache_mem[((cache_index>>2)<<2)+i];
+            // end
+        end else begin
+            mem_read <= 1;
+            addr_ <= addr;
+            cache_mem[cache_index[3:2]][cache_index[1:0]] <= read_data_;
+            cache_tag[cache_index >> 2] <= cache_tag_;
+            cache_valid[cache_index>>2] <=1;
+
+            cache_mem[cache_index[3:2]][cache_index[1:0]] <= write_data;
+
+            mem_write <= 1;
+            addr_ <= addr;
+            write_data_ <= cache_mem[cache_index[3:2]];
+            // for (integer i = 0; i < 4; i = i + 1) begin
+            //     mem_read <=1;
+            //     addr_ <= (addr[31:2]<<2 + i);
+            //     cache_mem[((cache_index>>2)<<2)+i] <= read_data_[i];
+            // end
+            // cache_tag[cache_index>>2] <= victim_tag[31:2];
+            // cache_valid[cache_index>>2] <=1;
+            // cache_mem[cache_index] <= write_data;
+            // for (integer i = 0; i < 4; i = i + 1) begin
+            //     mem_write <=1;
+            //     addr_ <= (addr[31:2]<<2 + i);
+            //     write_data_ <= cache_mem[((cache_index>>2)<<2)+i];
+            // end
         end
     end
 end
