@@ -11,7 +11,7 @@ wire [WIDTH-1:0] alu_input_a,alu_input_b;
 wire [WIDTH-1:0] imm;
 wire alu_src;
 wire [6:0] opcode;
-wire [WIDTH-1:0] test;
+wire [WIDTH-1:0] testR,testM;
 wire [3:0] alu_cnt;
 wire [5:0] alu_control_in;
 
@@ -36,7 +36,8 @@ CPU cpu(
     .imm(imm),
     .alu_src(alu_src),
     .opcode(opcode),
-    .test(test),
+    .testR(testR),
+    .testM(testM),
     .alu_cnt(alu_cnt),
     .alu_control_in(alu_control_in),
     .pc_next(pc_next)

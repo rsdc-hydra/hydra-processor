@@ -25,6 +25,6 @@ always @ (posedge clk) begin
         regs[write_reg_addr]<=write_reg_data;
 end
 
-assign test=regs[3];
+assign test=regs[7];
     
 endmodule
