@@ -12,15 +12,15 @@ module CPU_Demo(
 	 output [31:0] testM
 );
 
-reg [31:0] disp;
+wire [31:0] disp;
 
-initial begin
-    disp=0;
-end
-
-always @(posedge clk) begin
-    disp=disp+1;
-end
+//initial begin
+//    disp=0;
+//end
+//
+//always @(posedge clk) begin
+//    disp=disp+1;
+//end
 
 Digits digits(
     .disp(disp),
@@ -43,7 +43,7 @@ CPU cpu(
     .testM(testM)
 );
 
-// assign disp=testR;
+assign disp=testR;
 
 Clk_Div clk_div(
     .clk(clk),
