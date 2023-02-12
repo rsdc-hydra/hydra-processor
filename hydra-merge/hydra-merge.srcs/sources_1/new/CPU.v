@@ -128,14 +128,23 @@ module CPU #(parameter WIDTH = 32,parameter MEM_SIZE=5,parameter REG_FILE_SIZE=5
     wire mem_write,mem_read;
     wire [WIDTH-1:0] read_data;
 
-    Data_Mem data_mem(
+    // Data_Mem data_mem(
+    //     .clk(clk),
+    //     .mem_write(mem_write),
+    //     .mem_read(mem_read),
+    //     .addr(alu_result),
+    //     .write_data(read_reg_data_2),
+    //     .read_data(read_data),
+    //     .test(testM)
+    // );
+
+    Cache cache(
         .clk(clk),
-        .mem_write(mem_write),
-        .mem_read(mem_read),
+        .cache_write(mem_write),
+        .cache_read(cache_read),
         .addr(alu_result),
-        .write_data(read_reg_data_2),
-        .read_data(read_data),
-        .test(testM)
+        .write_data(write_data),
+        .read_data(read_data)
     );
 
     

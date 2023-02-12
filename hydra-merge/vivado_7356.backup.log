@@ -2,10 +2,10 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Sun Feb 12 05:56:26 2023
-# Process ID: 21252
+# Start of session at: Sun Feb 12 05:50:17 2023
+# Process ID: 7356
 # Current directory: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-merge
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6644 M:\Academics\Sem5\WorkPlace\Circuits and Systems Design\Digital\Final Processor Design\hydra-merge\hydra-merge.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21096 M:\Academics\Sem5\WorkPlace\Circuits and Systems Design\Digital\Final Processor Design\hydra-merge\hydra-merge.xpr
 # Log file: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-merge/vivado.log
 # Journal file: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-merge\vivado.jou
 #-----------------------------------------------------------
@@ -18,7 +18,7 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Programs/Xilinx/Vivado/2018.3/data/ip'.
-open_project: Time (s): cpu = 00:00:34 ; elapsed = 00:00:15 . Memory (MB): peak = 777.402 ; gain = 149.320
+open_project: Time (s): cpu = 00:00:34 ; elapsed = 00:00:16 . Memory (MB): peak = 767.445 ; gain = 140.230
 update_compile_order -fileset sources_1
 launch_simulation
 INFO: [Vivado 12-5682] Launching behavioral simulation in 'M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-merge/hydra-merge.sim/sim_1/behav/xsim'
@@ -91,7 +91,8 @@ Compiling module xil_defaultlib.CPU
 Compiling module xil_defaultlib.CPU_Tb
 Compiling module xil_defaultlib.glbl
 Built simulation snapshot CPU_Tb_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 822.688 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
 INFO: [USF-XSim-4] XSim::Simulate design
 INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-merge/hydra-merge.sim/sim_1/behav/xsim'
 INFO: [USF-XSim-98] *** Running xsim
@@ -112,8 +113,8 @@ source CPU_Tb.tcl
 # run 1000ns
 INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_Tb_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 832.371 ; gain = 48.016
+launch_simulation: Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 824.605 ; gain = 1.918
 close_sim
 INFO: [Simtcl 6-16] Simulation closed
 exit
-INFO: [Common 17-206] Exiting Vivado at Sun Feb 12 06:00:46 2023...
+INFO: [Common 17-206] Exiting Vivado at Sun Feb 12 05:55:23 2023...
