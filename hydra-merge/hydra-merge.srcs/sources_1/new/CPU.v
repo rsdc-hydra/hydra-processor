@@ -134,16 +134,16 @@ module CPU #(parameter WIDTH = 32,parameter MEM_SIZE=5,parameter REG_FILE_SIZE=5
     //     .mem_read(mem_read),
     //     .addr(alu_result),
     //     .write_data(read_reg_data_2),
-    //     .read_data(read_data),
-    //     .test(testM)
+    //     .read_data(read_data)
+    //     // .test(testM)
     // );
 
     Cache cache(
         .clk(clk),
         .cache_write(mem_write),
-        .cache_read(cache_read),
+        .cache_read(mem_read),
         .addr(alu_result),
-        .write_data(write_data),
+        .write_data(read_reg_data_2),
         .read_data(read_data)
     );
 

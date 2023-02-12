@@ -19,10 +19,15 @@ reg [31:0] cache_tag [3:0];
 reg victim_valid;
 reg [31:0] victim_tag;
 
-wire [31:0] cache_tag_ = addr[31:6];
-wire [3:0] cache_index = addr[5:2];
-wire [31:0] victim_tag_ = addr[31:4];
-wire [1:0] victim_index = addr[3:2];
+// wire [31:0] cache_tag_ = addr[31:6];
+// wire [3:0] cache_index = addr[5:2];
+// wire [31:0] victim_tag_ = addr[31:4];
+// wire [1:0] victim_index = addr[3:2];
+
+wire [31:0] cache_tag_ = addr[31:4];
+wire [3:0] cache_index = addr[3:0];
+wire [31:0] victim_tag_ = addr[31:2];
+wire [1:0] victim_index = addr[1:0];
 
 reg mem_write,mem_read;
 reg addr_,write_data_;
@@ -90,6 +95,7 @@ always @(*) begin
         end
     end
     else if(cache_write) begin
+        read_data<=0;
         if((cache_valid[cache_index>>2]) && (cache_tag[cache_index>>2] == cache_tag_) )begin
             cache_mem[cache_index] <= write_data;
             for (i = 0; i < 4; i = i + 1) begin

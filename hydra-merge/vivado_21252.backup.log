@@ -1,0 +1,119 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Feb 12 05:56:26 2023
+# Process ID: 21252
+# Current directory: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-merge
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6644 M:\Academics\Sem5\WorkPlace\Circuits and Systems Design\Digital\Final Processor Design\hydra-merge\hydra-merge.xpr
+# Log file: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-merge/vivado.log
+# Journal file: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-merge\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-merge/hydra-merge.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-merge'
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Programs/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:34 ; elapsed = 00:00:15 . Memory (MB): peak = 777.402 ; gain = 149.320
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-merge/hydra-merge.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU_Tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-merge/hydra-merge.sim/sim_1/behav/xsim/program.mem'
+INFO: [SIM-utils-43] Exported 'M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-merge/hydra-merge.sim/sim_1/behav/xsim/program.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-merge/hydra-merge.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_Tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-merge/hydra-merge.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-merge/hydra-merge.srcs/sources_1/new/ALU_Control_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_Control_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-merge/hydra-merge.srcs/sources_1/new/CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [VRFC 10-2458] undeclared symbol cache_read, assumed default net type wire [M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-merge/hydra-merge.srcs/sources_1/new/CPU.v:144]
+INFO: [VRFC 10-2458] undeclared symbol write_data, assumed default net type wire [M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-merge/hydra-merge.srcs/sources_1/new/CPU.v:146]
+INFO: [VRFC 10-2458] undeclared symbol mem_to_reg, assumed default net type wire [M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-merge/hydra-merge.srcs/sources_1/new/CPU.v:153]
+INFO: [VRFC 10-2263] Analyzing Verilog file "M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-merge/hydra-merge.srcs/sources_1/new/Cache.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Cache
+INFO: [VRFC 10-2263] Analyzing Verilog file "M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-merge/hydra-merge.srcs/sources_1/new/Control_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-merge/hydra-merge.srcs/sources_1/new/Data_Mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Data_Mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-merge/hydra-merge.srcs/sources_1/new/Immediate_Gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Immediate_Gen
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-merge/hydra-merge.srcs/sources_1/new/Immediate_Gen.v:22]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-merge/hydra-merge.srcs/sources_1/new/Immediate_Gen.v:28]
+INFO: [VRFC 10-2263] Analyzing Verilog file "M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-merge/hydra-merge.srcs/sources_1/new/Ins_Mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ins_Mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-merge/hydra-merge.srcs/sources_1/new/Mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-merge/hydra-merge.srcs/sources_1/new/PC_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-merge/hydra-merge.srcs/sources_1/new/Reg_File.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Reg_File
+INFO: [VRFC 10-2263] Analyzing Verilog file "M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-merge/hydra-merge.srcs/sim_1/new/CPU_Tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_Tb
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-merge/hydra-merge.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Programs/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto cc41a0b251464d08a6b6d80a8cab56b8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_Tb_behav xil_defaultlib.CPU_Tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'write_data' [M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-merge/hydra-merge.srcs/sources_1/new/CPU.v:146]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'addr' [M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-merge/hydra-merge.srcs/sources_1/new/Cache.v:34]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'write_data' [M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-merge/hydra-merge.srcs/sources_1/new/Cache.v:35]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-merge/hydra-merge.srcs/sources_1/new/Immediate_Gen.v:22]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-merge/hydra-merge.srcs/sources_1/new/Immediate_Gen.v:28]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC_Unit
+Compiling module xil_defaultlib.Ins_Mem
+Compiling module xil_defaultlib.Reg_File
+Compiling module xil_defaultlib.Immediate_Gen
+Compiling module xil_defaultlib.Mux
+Compiling module xil_defaultlib.ALU_Control_Unit
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.Data_Mem
+Compiling module xil_defaultlib.Cache
+Compiling module xil_defaultlib.Control_Unit
+Compiling module xil_defaultlib.CPU
+Compiling module xil_defaultlib.CPU_Tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CPU_Tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-merge/hydra-merge.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CPU_Tb_behav -key {Behavioral:sim_1:Functional:CPU_Tb} -tclbatch {CPU_Tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source CPU_Tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_Tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 832.371 ; gain = 48.016
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Feb 12 06:00:46 2023...

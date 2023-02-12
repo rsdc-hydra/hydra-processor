@@ -4,8 +4,6 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "M:/Academics/Sem5/WorkPlace/Circuit
 INFO: [VRFC 10-311] analyzing module ALU_Control_Unit
 INFO: [VRFC 10-2263] Analyzing Verilog file "M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-merge/hydra-merge.srcs/sources_1/new/CPU.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module CPU
-INFO: [VRFC 10-2458] undeclared symbol cache_read, assumed default net type wire [M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-merge/hydra-merge.srcs/sources_1/new/CPU.v:144]
-INFO: [VRFC 10-2458] undeclared symbol write_data, assumed default net type wire [M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-merge/hydra-merge.srcs/sources_1/new/CPU.v:146]
 INFO: [VRFC 10-2458] undeclared symbol mem_to_reg, assumed default net type wire [M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-merge/hydra-merge.srcs/sources_1/new/CPU.v:153]
 INFO: [VRFC 10-2263] Analyzing Verilog file "M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra-merge/hydra-merge.srcs/sources_1/new/Cache.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Cache
