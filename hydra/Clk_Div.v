@@ -10,7 +10,7 @@ end
 
 always @(posedge src_clk)
 begin
-    if (count == 27'd1_000_000) begin 
+    if (count == 27'd50_000_000) begin 
         count   <= 0;
         clk <= ~clk;
     end else begin

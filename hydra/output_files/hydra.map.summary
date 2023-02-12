@@ -1,12 +1,12 @@
-Analysis & Synthesis Status : Successful - Sun Feb 12 08:29:42 2023
+Analysis & Synthesis Status : Successful - Sun Feb 12 15:55:27 2023
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : hydra
 Top-level Entity Name : CPU_Demo
 Family : Cyclone IV E
-Total logic elements : 9,853
-    Total combinational functions : 4,842
-    Dedicated logic registers : 5,485
-Total registers : 5485
+Total logic elements : 9,951
+    Total combinational functions : 4,876
+    Dedicated logic registers : 5,549
+Total registers : 5549
 Total pins : 121
 Total virtual pins : 0
 Total memory bits : 8,192

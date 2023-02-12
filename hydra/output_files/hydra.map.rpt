@@ -1,5 +1,5 @@
 Analysis & Synthesis report for hydra
-Sun Feb 12 08:29:43 2023
+Sun Feb 12 15:55:28 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -64,15 +64,15 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Feb 12 08:29:42 2023       ;
+; Analysis & Synthesis Status        ; Successful - Sun Feb 12 15:55:27 2023       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; hydra                                       ;
 ; Top-level Entity Name              ; CPU_Demo                                    ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 9,853                                       ;
-;     Total combinational functions  ; 4,842                                       ;
-;     Dedicated logic registers      ; 5,485                                       ;
-; Total registers                    ; 5485                                        ;
+; Total logic elements               ; 9,951                                       ;
+;     Total combinational functions  ; 4,876                                       ;
+;     Dedicated logic registers      ; 5,549                                       ;
+; Total registers                    ; 5549                                        ;
 ; Total pins                         ; 121                                         ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 8,192                                       ;
@@ -175,14 +175,14 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.00        ;
+; Average used               ; 1.01        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   0.2%      ;
-;     Processor 3            ;   0.1%      ;
-;     Processor 4            ;   0.1%      ;
+;     Processor 3            ;   0.2%      ;
+;     Processor 4            ;   0.2%      ;
 +----------------------------+-------------+
 
 
@@ -269,20 +269,20 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+---------------------+
 ; Resource                                    ; Usage               ;
 +---------------------------------------------+---------------------+
-; Estimated Total logic elements              ; 9,853               ;
+; Estimated Total logic elements              ; 9,951               ;
 ;                                             ;                     ;
-; Total combinational functions               ; 4842                ;
+; Total combinational functions               ; 4876                ;
 ; Logic element usage by number of LUT inputs ;                     ;
-;     -- 4 input functions                    ; 3817                ;
-;     -- 3 input functions                    ; 698                 ;
-;     -- <=2 input functions                  ; 327                 ;
+;     -- 4 input functions                    ; 3948                ;
+;     -- 3 input functions                    ; 612                 ;
+;     -- <=2 input functions                  ; 316                 ;
 ;                                             ;                     ;
 ; Logic elements by mode                      ;                     ;
-;     -- normal mode                          ; 4639                ;
+;     -- normal mode                          ; 4673                ;
 ;     -- arithmetic mode                      ; 203                 ;
 ;                                             ;                     ;
-; Total registers                             ; 5485                ;
-;     -- Dedicated logic registers            ; 5485                ;
+; Total registers                             ; 5549                ;
+;     -- Dedicated logic registers            ; 5549                ;
 ;     -- I/O registers                        ; 0                   ;
 ;                                             ;                     ;
 ; I/O pins                                    ; 121                 ;
@@ -291,9 +291,9 @@ https://fpgasoftware.intel.com/eula.
 ; Embedded Multiplier 9-bit elements          ; 0                   ;
 ;                                             ;                     ;
 ; Maximum fan-out node                        ; Clk_Div:clk_div|clk ;
-; Maximum fan-out                             ; 4327                ;
-; Total fan-out                               ; 35743               ;
-; Average fan-out                             ; 3.36                ;
+; Maximum fan-out                             ; 4391                ;
+; Total fan-out                               ; 36179               ;
+; Average fan-out                             ; 3.37                ;
 +---------------------------------------------+---------------------+
 
 
@@ -302,19 +302,19 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
 ; Compilation Hierarchy Node                                                                                                              ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                                                                                                                                                  ; Entity Name                       ; Library Name ;
 +-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
-; |CPU_Demo                                                                                                                               ; 4842 (0)            ; 5485 (0)                  ; 8192        ; 0            ; 0       ; 0         ; 121  ; 0            ; |CPU_Demo                                                                                                                                                                                                                                                                                                                                            ; CPU_Demo                          ; work         ;
-;    |CPU:cpu|                                                                                                                            ; 4113 (0)            ; 4326 (0)                  ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU_Demo|CPU:cpu                                                                                                                                                                                                                                                                                                                                    ; CPU                               ; work         ;
-;       |ALU:alu|                                                                                                                         ; 683 (683)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU_Demo|CPU:cpu|ALU:alu                                                                                                                                                                                                                                                                                                                            ; ALU                               ; work         ;
-;       |ALU_Control_Unit:alu_control_unit|                                                                                               ; 14 (14)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU_Demo|CPU:cpu|ALU_Control_Unit:alu_control_unit                                                                                                                                                                                                                                                                                                  ; ALU_Control_Unit                  ; work         ;
-;       |Control_Unit:control_unit|                                                                                                       ; 16 (16)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU_Demo|CPU:cpu|Control_Unit:control_unit                                                                                                                                                                                                                                                                                                          ; Control_Unit                      ; work         ;
+; |CPU_Demo                                                                                                                               ; 4876 (0)            ; 5549 (0)                  ; 8192        ; 0            ; 0       ; 0         ; 121  ; 0            ; |CPU_Demo                                                                                                                                                                                                                                                                                                                                            ; CPU_Demo                          ; work         ;
+;    |CPU:cpu|                                                                                                                            ; 4142 (0)            ; 4390 (0)                  ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU_Demo|CPU:cpu                                                                                                                                                                                                                                                                                                                                    ; CPU                               ; work         ;
+;       |ALU:alu|                                                                                                                         ; 688 (688)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU_Demo|CPU:cpu|ALU:alu                                                                                                                                                                                                                                                                                                                            ; ALU                               ; work         ;
+;       |ALU_Control_Unit:alu_control_unit|                                                                                               ; 11 (11)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU_Demo|CPU:cpu|ALU_Control_Unit:alu_control_unit                                                                                                                                                                                                                                                                                                  ; ALU_Control_Unit                  ; work         ;
+;       |Control_Unit:control_unit|                                                                                                       ; 14 (14)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU_Demo|CPU:cpu|Control_Unit:control_unit                                                                                                                                                                                                                                                                                                          ; Control_Unit                      ; work         ;
 ;       |Data_Mem:data_mem|                                                                                                               ; 152 (152)           ; 4096 (4096)               ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU_Demo|CPU:cpu|Data_Mem:data_mem                                                                                                                                                                                                                                                                                                                  ; Data_Mem                          ; work         ;
-;       |Immediate_Gen:imm_gen|                                                                                                           ; 18 (18)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU_Demo|CPU:cpu|Immediate_Gen:imm_gen                                                                                                                                                                                                                                                                                                              ; Immediate_Gen                     ; work         ;
-;       |Ins_Mem:ins_mem|                                                                                                                 ; 25 (25)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU_Demo|CPU:cpu|Ins_Mem:ins_mem                                                                                                                                                                                                                                                                                                                    ; Ins_Mem                           ; work         ;
-;       |Mux:mux0|                                                                                                                        ; 48 (48)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU_Demo|CPU:cpu|Mux:mux0                                                                                                                                                                                                                                                                                                                           ; Mux                               ; work         ;
-;       |Mux:mux1|                                                                                                                        ; 2751 (2751)         ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU_Demo|CPU:cpu|Mux:mux1                                                                                                                                                                                                                                                                                                                           ; Mux                               ; work         ;
-;       |PC_Unit:pc_unit|                                                                                                                 ; 23 (23)             ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU_Demo|CPU:cpu|PC_Unit:pc_unit                                                                                                                                                                                                                                                                                                                    ; PC_Unit                           ; work         ;
-;       |Reg_File:ref_file|                                                                                                               ; 383 (383)           ; 224 (224)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU_Demo|CPU:cpu|Reg_File:ref_file                                                                                                                                                                                                                                                                                                                  ; Reg_File                          ; work         ;
-;    |Clk_Div:clk_div|                                                                                                                    ; 44 (44)             ; 28 (28)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU_Demo|Clk_Div:clk_div                                                                                                                                                                                                                                                                                                                            ; Clk_Div                           ; work         ;
+;       |Immediate_Gen:imm_gen|                                                                                                           ; 20 (20)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU_Demo|CPU:cpu|Immediate_Gen:imm_gen                                                                                                                                                                                                                                                                                                              ; Immediate_Gen                     ; work         ;
+;       |Ins_Mem:ins_mem|                                                                                                                 ; 45 (45)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU_Demo|CPU:cpu|Ins_Mem:ins_mem                                                                                                                                                                                                                                                                                                                    ; Ins_Mem                           ; work         ;
+;       |Mux:mux0|                                                                                                                        ; 44 (44)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU_Demo|CPU:cpu|Mux:mux0                                                                                                                                                                                                                                                                                                                           ; Mux                               ; work         ;
+;       |Mux:mux1|                                                                                                                        ; 2791 (2791)         ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU_Demo|CPU:cpu|Mux:mux1                                                                                                                                                                                                                                                                                                                           ; Mux                               ; work         ;
+;       |PC_Unit:pc_unit|                                                                                                                 ; 24 (24)             ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU_Demo|CPU:cpu|PC_Unit:pc_unit                                                                                                                                                                                                                                                                                                                    ; PC_Unit                           ; work         ;
+;       |Reg_File:ref_file|                                                                                                               ; 353 (353)           ; 288 (288)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU_Demo|CPU:cpu|Reg_File:ref_file                                                                                                                                                                                                                                                                                                                  ; Reg_File                          ; work         ;
+;    |Clk_Div:clk_div|                                                                                                                    ; 49 (49)             ; 28 (28)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU_Demo|Clk_Div:clk_div                                                                                                                                                                                                                                                                                                                            ; Clk_Div                           ; work         ;
 ;    |Digits:digits|                                                                                                                      ; 56 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU_Demo|Digits:digits                                                                                                                                                                                                                                                                                                                              ; Digits                            ; work         ;
 ;       |Digit:seg0|                                                                                                                      ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU_Demo|Digits:digits|Digit:seg0                                                                                                                                                                                                                                                                                                                   ; Digit                             ; work         ;
 ;       |Digit:seg1|                                                                                                                      ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU_Demo|Digits:digits|Digit:seg1                                                                                                                                                                                                                                                                                                                   ; Digit                             ; work         ;
@@ -993,294 +993,230 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; CPU:cpu|Reg_File:ref_file|regs[16][31]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[15][0]   ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[14][0]   ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[13][0]   ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[12][0]   ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[11][0]   ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[10][0]   ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[9][0]    ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[6][0]    ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[1][0]    ; Stuck at GND due to stuck port clock_enable ;
+; CPU:cpu|Reg_File:ref_file|regs[7][0]    ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[15][1]   ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[14][1]   ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[13][1]   ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[12][1]   ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[11][1]   ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[10][1]   ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[9][1]    ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[6][1]    ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[1][1]    ; Stuck at GND due to stuck port clock_enable ;
+; CPU:cpu|Reg_File:ref_file|regs[7][1]    ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[15][2]   ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[14][2]   ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[13][2]   ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[12][2]   ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[11][2]   ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[10][2]   ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[9][2]    ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[6][2]    ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[1][2]    ; Stuck at GND due to stuck port clock_enable ;
+; CPU:cpu|Reg_File:ref_file|regs[7][2]    ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[15][3]   ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[14][3]   ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[13][3]   ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[12][3]   ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[11][3]   ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[10][3]   ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[9][3]    ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[6][3]    ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[1][3]    ; Stuck at GND due to stuck port clock_enable ;
+; CPU:cpu|Reg_File:ref_file|regs[7][3]    ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[15][4]   ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[14][4]   ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[13][4]   ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[12][4]   ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[11][4]   ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[10][4]   ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[9][4]    ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[6][4]    ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[1][4]    ; Stuck at GND due to stuck port clock_enable ;
+; CPU:cpu|Reg_File:ref_file|regs[7][4]    ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[15][5]   ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[14][5]   ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[13][5]   ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[12][5]   ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[11][5]   ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[10][5]   ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[9][5]    ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[6][5]    ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[1][5]    ; Stuck at GND due to stuck port clock_enable ;
+; CPU:cpu|Reg_File:ref_file|regs[7][5]    ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[15][6]   ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[14][6]   ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[13][6]   ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[12][6]   ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[11][6]   ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[10][6]   ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[9][6]    ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[6][6]    ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[1][6]    ; Stuck at GND due to stuck port clock_enable ;
+; CPU:cpu|Reg_File:ref_file|regs[7][6]    ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[15][7]   ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[14][7]   ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[13][7]   ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[12][7]   ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[11][7]   ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[10][7]   ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[9][7]    ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[6][7]    ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[1][7]    ; Stuck at GND due to stuck port clock_enable ;
+; CPU:cpu|Reg_File:ref_file|regs[7][7]    ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[15][8]   ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[14][8]   ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[13][8]   ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[12][8]   ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[11][8]   ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[10][8]   ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[9][8]    ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[6][8]    ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[1][8]    ; Stuck at GND due to stuck port clock_enable ;
+; CPU:cpu|Reg_File:ref_file|regs[7][8]    ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[15][9]   ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[14][9]   ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[13][9]   ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[12][9]   ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[11][9]   ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[10][9]   ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[9][9]    ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[6][9]    ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[1][9]    ; Stuck at GND due to stuck port clock_enable ;
+; CPU:cpu|Reg_File:ref_file|regs[7][9]    ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[15][10]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[14][10]  ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[13][10]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[12][10]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[11][10]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[10][10]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[9][10]   ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[6][10]   ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[1][10]   ; Stuck at GND due to stuck port clock_enable ;
+; CPU:cpu|Reg_File:ref_file|regs[7][10]   ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[15][11]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[14][11]  ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[13][11]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[12][11]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[11][11]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[10][11]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[9][11]   ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[6][11]   ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[1][11]   ; Stuck at GND due to stuck port clock_enable ;
+; CPU:cpu|Reg_File:ref_file|regs[7][11]   ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[15][12]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[14][12]  ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[13][12]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[12][12]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[11][12]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[10][12]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[9][12]   ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[6][12]   ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[1][12]   ; Stuck at GND due to stuck port clock_enable ;
+; CPU:cpu|Reg_File:ref_file|regs[7][12]   ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[15][13]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[14][13]  ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[13][13]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[12][13]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[11][13]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[10][13]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[9][13]   ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[6][13]   ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[1][13]   ; Stuck at GND due to stuck port clock_enable ;
+; CPU:cpu|Reg_File:ref_file|regs[7][13]   ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[15][14]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[14][14]  ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[13][14]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[12][14]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[11][14]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[10][14]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[9][14]   ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[6][14]   ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[1][14]   ; Stuck at GND due to stuck port clock_enable ;
+; CPU:cpu|Reg_File:ref_file|regs[7][14]   ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[15][15]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[14][15]  ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[13][15]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[12][15]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[11][15]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[10][15]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[9][15]   ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[6][15]   ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[1][15]   ; Stuck at GND due to stuck port clock_enable ;
+; CPU:cpu|Reg_File:ref_file|regs[7][15]   ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[15][16]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[14][16]  ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[13][16]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[12][16]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[11][16]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[10][16]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[9][16]   ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[6][16]   ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[1][16]   ; Stuck at GND due to stuck port clock_enable ;
+; CPU:cpu|Reg_File:ref_file|regs[7][16]   ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[15][17]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[14][17]  ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[13][17]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[12][17]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[11][17]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[10][17]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[9][17]   ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[6][17]   ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[1][17]   ; Stuck at GND due to stuck port clock_enable ;
+; CPU:cpu|Reg_File:ref_file|regs[7][17]   ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[15][18]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[14][18]  ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[13][18]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[12][18]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[11][18]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[10][18]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[9][18]   ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[6][18]   ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[1][18]   ; Stuck at GND due to stuck port clock_enable ;
+; CPU:cpu|Reg_File:ref_file|regs[7][18]   ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[15][19]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[14][19]  ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[13][19]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[12][19]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[11][19]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[10][19]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[9][19]   ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[6][19]   ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[1][19]   ; Stuck at GND due to stuck port clock_enable ;
+; CPU:cpu|Reg_File:ref_file|regs[7][19]   ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[15][20]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[14][20]  ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[13][20]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[12][20]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[11][20]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[10][20]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[9][20]   ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[6][20]   ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[1][20]   ; Stuck at GND due to stuck port clock_enable ;
+; CPU:cpu|Reg_File:ref_file|regs[7][20]   ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[15][21]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[14][21]  ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[13][21]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[12][21]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[11][21]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[10][21]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[9][21]   ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[6][21]   ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[1][21]   ; Stuck at GND due to stuck port clock_enable ;
+; CPU:cpu|Reg_File:ref_file|regs[7][21]   ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[15][22]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[14][22]  ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[13][22]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[12][22]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[11][22]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[10][22]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[9][22]   ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[6][22]   ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[1][22]   ; Stuck at GND due to stuck port clock_enable ;
+; CPU:cpu|Reg_File:ref_file|regs[7][22]   ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[15][23]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[14][23]  ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[13][23]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[12][23]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[11][23]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[10][23]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[9][23]   ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[6][23]   ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[1][23]   ; Stuck at GND due to stuck port clock_enable ;
+; CPU:cpu|Reg_File:ref_file|regs[7][23]   ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[15][24]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[14][24]  ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[13][24]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[12][24]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[11][24]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[10][24]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[9][24]   ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[6][24]   ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[1][24]   ; Stuck at GND due to stuck port clock_enable ;
+; CPU:cpu|Reg_File:ref_file|regs[7][24]   ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[15][25]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[14][25]  ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[13][25]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[12][25]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[11][25]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[10][25]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[9][25]   ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[6][25]   ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[1][25]   ; Stuck at GND due to stuck port clock_enable ;
+; CPU:cpu|Reg_File:ref_file|regs[7][25]   ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[15][26]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[14][26]  ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[13][26]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[12][26]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[11][26]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[10][26]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[9][26]   ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[6][26]   ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[1][26]   ; Stuck at GND due to stuck port clock_enable ;
+; CPU:cpu|Reg_File:ref_file|regs[7][26]   ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[15][27]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[14][27]  ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[13][27]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[12][27]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[11][27]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[10][27]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[9][27]   ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[6][27]   ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[1][27]   ; Stuck at GND due to stuck port clock_enable ;
+; CPU:cpu|Reg_File:ref_file|regs[7][27]   ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[15][28]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[14][28]  ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[13][28]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[12][28]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[11][28]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[10][28]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[9][28]   ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[6][28]   ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[1][28]   ; Stuck at GND due to stuck port clock_enable ;
+; CPU:cpu|Reg_File:ref_file|regs[7][28]   ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[15][29]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[14][29]  ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[13][29]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[12][29]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[11][29]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[10][29]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[9][29]   ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[6][29]   ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[1][29]   ; Stuck at GND due to stuck port clock_enable ;
+; CPU:cpu|Reg_File:ref_file|regs[7][29]   ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[15][30]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[14][30]  ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[13][30]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[12][30]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[11][30]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[10][30]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[9][30]   ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[6][30]   ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[1][30]   ; Stuck at GND due to stuck port clock_enable ;
+; CPU:cpu|Reg_File:ref_file|regs[7][30]   ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[15][31]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[14][31]  ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[13][31]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[12][31]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[11][31]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[10][31]  ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|Reg_File:ref_file|regs[9][31]   ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[6][31]   ; Stuck at GND due to stuck port clock_enable ;
-; CPU:cpu|Reg_File:ref_file|regs[1][31]   ; Stuck at GND due to stuck port clock_enable ;
+; CPU:cpu|Reg_File:ref_file|regs[7][31]   ; Stuck at GND due to stuck port clock_enable ;
 ; CPU:cpu|PC_Unit:pc_unit|pc[7..31]       ; Lost fanout                                 ;
-; Total Number of Removed Registers = 825 ;                                             ;
+; Total Number of Removed Registers = 761 ;                                             ;
 +-----------------------------------------+---------------------------------------------+
 
 
@@ -1530,149 +1466,117 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[19][31], CPU:cpu|Reg_File:ref_file|regs[18][31], ;
 ;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[17][31], CPU:cpu|Reg_File:ref_file|regs[16][31], ;
 ;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[15][0], CPU:cpu|Reg_File:ref_file|regs[14][0],   ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[13][0], CPU:cpu|Reg_File:ref_file|regs[12][0],   ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[11][0], CPU:cpu|Reg_File:ref_file|regs[10][0],   ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[9][0], CPU:cpu|Reg_File:ref_file|regs[6][0],     ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[1][0], CPU:cpu|Reg_File:ref_file|regs[15][1],    ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[14][1], CPU:cpu|Reg_File:ref_file|regs[13][1],   ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[12][1], CPU:cpu|Reg_File:ref_file|regs[11][1],   ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[10][1], CPU:cpu|Reg_File:ref_file|regs[9][1],    ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[6][1], CPU:cpu|Reg_File:ref_file|regs[1][1],     ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[12][0], CPU:cpu|Reg_File:ref_file|regs[11][0],   ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[10][0], CPU:cpu|Reg_File:ref_file|regs[9][0],    ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[7][0], CPU:cpu|Reg_File:ref_file|regs[15][1],    ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[14][1], CPU:cpu|Reg_File:ref_file|regs[12][1],   ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[11][1], CPU:cpu|Reg_File:ref_file|regs[10][1],   ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[9][1], CPU:cpu|Reg_File:ref_file|regs[7][1],     ;
 ;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[15][2], CPU:cpu|Reg_File:ref_file|regs[14][2],   ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[13][2], CPU:cpu|Reg_File:ref_file|regs[12][2],   ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[11][2], CPU:cpu|Reg_File:ref_file|regs[10][2],   ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[9][2], CPU:cpu|Reg_File:ref_file|regs[6][2],     ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[1][2], CPU:cpu|Reg_File:ref_file|regs[15][3],    ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[14][3], CPU:cpu|Reg_File:ref_file|regs[13][3],   ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[12][3], CPU:cpu|Reg_File:ref_file|regs[11][3],   ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[10][3], CPU:cpu|Reg_File:ref_file|regs[9][3],    ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[6][3], CPU:cpu|Reg_File:ref_file|regs[1][3],     ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[12][2], CPU:cpu|Reg_File:ref_file|regs[11][2],   ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[10][2], CPU:cpu|Reg_File:ref_file|regs[9][2],    ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[7][2], CPU:cpu|Reg_File:ref_file|regs[15][3],    ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[14][3], CPU:cpu|Reg_File:ref_file|regs[12][3],   ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[11][3], CPU:cpu|Reg_File:ref_file|regs[10][3],   ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[9][3], CPU:cpu|Reg_File:ref_file|regs[7][3],     ;
 ;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[15][4], CPU:cpu|Reg_File:ref_file|regs[14][4],   ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[13][4], CPU:cpu|Reg_File:ref_file|regs[12][4],   ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[11][4], CPU:cpu|Reg_File:ref_file|regs[10][4],   ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[9][4], CPU:cpu|Reg_File:ref_file|regs[6][4],     ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[1][4], CPU:cpu|Reg_File:ref_file|regs[15][5],    ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[14][5], CPU:cpu|Reg_File:ref_file|regs[13][5],   ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[12][5], CPU:cpu|Reg_File:ref_file|regs[11][5],   ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[10][5], CPU:cpu|Reg_File:ref_file|regs[9][5],    ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[6][5], CPU:cpu|Reg_File:ref_file|regs[1][5],     ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[12][4], CPU:cpu|Reg_File:ref_file|regs[11][4],   ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[10][4], CPU:cpu|Reg_File:ref_file|regs[9][4],    ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[7][4], CPU:cpu|Reg_File:ref_file|regs[15][5],    ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[14][5], CPU:cpu|Reg_File:ref_file|regs[12][5],   ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[11][5], CPU:cpu|Reg_File:ref_file|regs[10][5],   ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[9][5], CPU:cpu|Reg_File:ref_file|regs[7][5],     ;
 ;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[15][6], CPU:cpu|Reg_File:ref_file|regs[14][6],   ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[13][6], CPU:cpu|Reg_File:ref_file|regs[12][6],   ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[11][6], CPU:cpu|Reg_File:ref_file|regs[10][6],   ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[9][6], CPU:cpu|Reg_File:ref_file|regs[6][6],     ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[1][6], CPU:cpu|Reg_File:ref_file|regs[15][7],    ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[14][7], CPU:cpu|Reg_File:ref_file|regs[13][7],   ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[12][7], CPU:cpu|Reg_File:ref_file|regs[11][7],   ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[10][7], CPU:cpu|Reg_File:ref_file|regs[9][7],    ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[6][7], CPU:cpu|Reg_File:ref_file|regs[1][7],     ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[12][6], CPU:cpu|Reg_File:ref_file|regs[11][6],   ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[10][6], CPU:cpu|Reg_File:ref_file|regs[9][6],    ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[7][6], CPU:cpu|Reg_File:ref_file|regs[15][7],    ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[14][7], CPU:cpu|Reg_File:ref_file|regs[12][7],   ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[11][7], CPU:cpu|Reg_File:ref_file|regs[10][7],   ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[9][7], CPU:cpu|Reg_File:ref_file|regs[7][7],     ;
 ;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[15][8], CPU:cpu|Reg_File:ref_file|regs[14][8],   ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[13][8], CPU:cpu|Reg_File:ref_file|regs[12][8],   ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[11][8], CPU:cpu|Reg_File:ref_file|regs[10][8],   ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[9][8], CPU:cpu|Reg_File:ref_file|regs[6][8],     ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[1][8], CPU:cpu|Reg_File:ref_file|regs[15][9],    ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[14][9], CPU:cpu|Reg_File:ref_file|regs[13][9],   ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[12][9], CPU:cpu|Reg_File:ref_file|regs[11][9],   ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[10][9], CPU:cpu|Reg_File:ref_file|regs[9][9],    ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[6][9], CPU:cpu|Reg_File:ref_file|regs[1][9],     ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[12][8], CPU:cpu|Reg_File:ref_file|regs[11][8],   ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[10][8], CPU:cpu|Reg_File:ref_file|regs[9][8],    ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[7][8], CPU:cpu|Reg_File:ref_file|regs[15][9],    ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[14][9], CPU:cpu|Reg_File:ref_file|regs[12][9],   ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[11][9], CPU:cpu|Reg_File:ref_file|regs[10][9],   ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[9][9], CPU:cpu|Reg_File:ref_file|regs[7][9],     ;
 ;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[15][10], CPU:cpu|Reg_File:ref_file|regs[14][10], ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[13][10], CPU:cpu|Reg_File:ref_file|regs[12][10], ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[11][10], CPU:cpu|Reg_File:ref_file|regs[10][10], ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[9][10], CPU:cpu|Reg_File:ref_file|regs[6][10],   ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[1][10], CPU:cpu|Reg_File:ref_file|regs[15][11],  ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[14][11], CPU:cpu|Reg_File:ref_file|regs[13][11], ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[12][11], CPU:cpu|Reg_File:ref_file|regs[11][11], ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[10][11], CPU:cpu|Reg_File:ref_file|regs[9][11],  ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[6][11], CPU:cpu|Reg_File:ref_file|regs[1][11],   ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[12][10], CPU:cpu|Reg_File:ref_file|regs[11][10], ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[10][10], CPU:cpu|Reg_File:ref_file|regs[9][10],  ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[7][10], CPU:cpu|Reg_File:ref_file|regs[15][11],  ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[14][11], CPU:cpu|Reg_File:ref_file|regs[12][11], ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[11][11], CPU:cpu|Reg_File:ref_file|regs[10][11], ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[9][11], CPU:cpu|Reg_File:ref_file|regs[7][11],   ;
 ;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[15][12], CPU:cpu|Reg_File:ref_file|regs[14][12], ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[13][12], CPU:cpu|Reg_File:ref_file|regs[12][12], ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[11][12], CPU:cpu|Reg_File:ref_file|regs[10][12], ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[9][12], CPU:cpu|Reg_File:ref_file|regs[6][12],   ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[1][12], CPU:cpu|Reg_File:ref_file|regs[15][13],  ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[14][13], CPU:cpu|Reg_File:ref_file|regs[13][13], ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[12][13], CPU:cpu|Reg_File:ref_file|regs[11][13], ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[10][13], CPU:cpu|Reg_File:ref_file|regs[9][13],  ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[6][13], CPU:cpu|Reg_File:ref_file|regs[1][13],   ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[12][12], CPU:cpu|Reg_File:ref_file|regs[11][12], ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[10][12], CPU:cpu|Reg_File:ref_file|regs[9][12],  ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[7][12], CPU:cpu|Reg_File:ref_file|regs[15][13],  ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[14][13], CPU:cpu|Reg_File:ref_file|regs[12][13], ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[11][13], CPU:cpu|Reg_File:ref_file|regs[10][13], ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[9][13], CPU:cpu|Reg_File:ref_file|regs[7][13],   ;
 ;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[15][14], CPU:cpu|Reg_File:ref_file|regs[14][14], ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[13][14], CPU:cpu|Reg_File:ref_file|regs[12][14], ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[11][14], CPU:cpu|Reg_File:ref_file|regs[10][14], ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[9][14], CPU:cpu|Reg_File:ref_file|regs[6][14],   ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[1][14], CPU:cpu|Reg_File:ref_file|regs[15][15],  ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[14][15], CPU:cpu|Reg_File:ref_file|regs[13][15], ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[12][15], CPU:cpu|Reg_File:ref_file|regs[11][15], ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[10][15], CPU:cpu|Reg_File:ref_file|regs[9][15],  ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[6][15], CPU:cpu|Reg_File:ref_file|regs[1][15],   ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[12][14], CPU:cpu|Reg_File:ref_file|regs[11][14], ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[10][14], CPU:cpu|Reg_File:ref_file|regs[9][14],  ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[7][14], CPU:cpu|Reg_File:ref_file|regs[15][15],  ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[14][15], CPU:cpu|Reg_File:ref_file|regs[12][15], ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[11][15], CPU:cpu|Reg_File:ref_file|regs[10][15], ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[9][15], CPU:cpu|Reg_File:ref_file|regs[7][15],   ;
 ;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[15][16], CPU:cpu|Reg_File:ref_file|regs[14][16], ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[13][16], CPU:cpu|Reg_File:ref_file|regs[12][16], ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[11][16], CPU:cpu|Reg_File:ref_file|regs[10][16], ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[9][16], CPU:cpu|Reg_File:ref_file|regs[6][16],   ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[1][16], CPU:cpu|Reg_File:ref_file|regs[15][17],  ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[14][17], CPU:cpu|Reg_File:ref_file|regs[13][17], ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[12][17], CPU:cpu|Reg_File:ref_file|regs[11][17], ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[10][17], CPU:cpu|Reg_File:ref_file|regs[9][17],  ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[6][17], CPU:cpu|Reg_File:ref_file|regs[1][17],   ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[12][16], CPU:cpu|Reg_File:ref_file|regs[11][16], ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[10][16], CPU:cpu|Reg_File:ref_file|regs[9][16],  ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[7][16], CPU:cpu|Reg_File:ref_file|regs[15][17],  ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[14][17], CPU:cpu|Reg_File:ref_file|regs[12][17], ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[11][17], CPU:cpu|Reg_File:ref_file|regs[10][17], ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[9][17], CPU:cpu|Reg_File:ref_file|regs[7][17],   ;
 ;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[15][18], CPU:cpu|Reg_File:ref_file|regs[14][18], ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[13][18], CPU:cpu|Reg_File:ref_file|regs[12][18], ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[11][18], CPU:cpu|Reg_File:ref_file|regs[10][18], ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[9][18], CPU:cpu|Reg_File:ref_file|regs[6][18],   ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[1][18], CPU:cpu|Reg_File:ref_file|regs[15][19],  ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[14][19], CPU:cpu|Reg_File:ref_file|regs[13][19], ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[12][19], CPU:cpu|Reg_File:ref_file|regs[11][19], ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[10][19], CPU:cpu|Reg_File:ref_file|regs[9][19],  ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[6][19], CPU:cpu|Reg_File:ref_file|regs[1][19],   ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[12][18], CPU:cpu|Reg_File:ref_file|regs[11][18], ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[10][18], CPU:cpu|Reg_File:ref_file|regs[9][18],  ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[7][18], CPU:cpu|Reg_File:ref_file|regs[15][19],  ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[14][19], CPU:cpu|Reg_File:ref_file|regs[12][19], ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[11][19], CPU:cpu|Reg_File:ref_file|regs[10][19], ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[9][19], CPU:cpu|Reg_File:ref_file|regs[7][19],   ;
 ;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[15][20], CPU:cpu|Reg_File:ref_file|regs[14][20], ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[13][20], CPU:cpu|Reg_File:ref_file|regs[12][20], ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[11][20], CPU:cpu|Reg_File:ref_file|regs[10][20], ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[9][20], CPU:cpu|Reg_File:ref_file|regs[6][20],   ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[1][20], CPU:cpu|Reg_File:ref_file|regs[15][21],  ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[14][21], CPU:cpu|Reg_File:ref_file|regs[13][21], ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[12][21], CPU:cpu|Reg_File:ref_file|regs[11][21], ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[10][21], CPU:cpu|Reg_File:ref_file|regs[9][21],  ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[6][21], CPU:cpu|Reg_File:ref_file|regs[1][21],   ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[12][20], CPU:cpu|Reg_File:ref_file|regs[11][20], ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[10][20], CPU:cpu|Reg_File:ref_file|regs[9][20],  ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[7][20], CPU:cpu|Reg_File:ref_file|regs[15][21],  ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[14][21], CPU:cpu|Reg_File:ref_file|regs[12][21], ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[11][21], CPU:cpu|Reg_File:ref_file|regs[10][21], ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[9][21], CPU:cpu|Reg_File:ref_file|regs[7][21],   ;
 ;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[15][22], CPU:cpu|Reg_File:ref_file|regs[14][22], ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[13][22], CPU:cpu|Reg_File:ref_file|regs[12][22], ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[11][22], CPU:cpu|Reg_File:ref_file|regs[10][22], ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[9][22], CPU:cpu|Reg_File:ref_file|regs[6][22],   ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[1][22], CPU:cpu|Reg_File:ref_file|regs[15][23],  ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[14][23], CPU:cpu|Reg_File:ref_file|regs[13][23], ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[12][23], CPU:cpu|Reg_File:ref_file|regs[11][23], ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[10][23], CPU:cpu|Reg_File:ref_file|regs[9][23],  ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[6][23], CPU:cpu|Reg_File:ref_file|regs[1][23],   ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[12][22], CPU:cpu|Reg_File:ref_file|regs[11][22], ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[10][22], CPU:cpu|Reg_File:ref_file|regs[9][22],  ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[7][22], CPU:cpu|Reg_File:ref_file|regs[15][23],  ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[14][23], CPU:cpu|Reg_File:ref_file|regs[12][23], ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[11][23], CPU:cpu|Reg_File:ref_file|regs[10][23], ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[9][23], CPU:cpu|Reg_File:ref_file|regs[7][23],   ;
 ;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[15][24], CPU:cpu|Reg_File:ref_file|regs[14][24], ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[13][24], CPU:cpu|Reg_File:ref_file|regs[12][24], ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[11][24], CPU:cpu|Reg_File:ref_file|regs[10][24], ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[9][24], CPU:cpu|Reg_File:ref_file|regs[6][24],   ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[1][24], CPU:cpu|Reg_File:ref_file|regs[15][25],  ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[14][25], CPU:cpu|Reg_File:ref_file|regs[13][25], ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[12][25], CPU:cpu|Reg_File:ref_file|regs[11][25], ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[10][25], CPU:cpu|Reg_File:ref_file|regs[9][25],  ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[6][25], CPU:cpu|Reg_File:ref_file|regs[1][25],   ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[12][24], CPU:cpu|Reg_File:ref_file|regs[11][24], ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[10][24], CPU:cpu|Reg_File:ref_file|regs[9][24],  ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[7][24], CPU:cpu|Reg_File:ref_file|regs[15][25],  ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[14][25], CPU:cpu|Reg_File:ref_file|regs[12][25], ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[11][25], CPU:cpu|Reg_File:ref_file|regs[10][25], ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[9][25], CPU:cpu|Reg_File:ref_file|regs[7][25],   ;
 ;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[15][26], CPU:cpu|Reg_File:ref_file|regs[14][26], ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[13][26], CPU:cpu|Reg_File:ref_file|regs[12][26], ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[11][26], CPU:cpu|Reg_File:ref_file|regs[10][26], ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[9][26], CPU:cpu|Reg_File:ref_file|regs[6][26],   ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[1][26], CPU:cpu|Reg_File:ref_file|regs[15][27],  ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[14][27], CPU:cpu|Reg_File:ref_file|regs[13][27], ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[12][27], CPU:cpu|Reg_File:ref_file|regs[11][27], ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[10][27], CPU:cpu|Reg_File:ref_file|regs[9][27],  ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[6][27], CPU:cpu|Reg_File:ref_file|regs[1][27],   ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[12][26], CPU:cpu|Reg_File:ref_file|regs[11][26], ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[10][26], CPU:cpu|Reg_File:ref_file|regs[9][26],  ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[7][26], CPU:cpu|Reg_File:ref_file|regs[15][27],  ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[14][27], CPU:cpu|Reg_File:ref_file|regs[12][27], ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[11][27], CPU:cpu|Reg_File:ref_file|regs[10][27], ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[9][27], CPU:cpu|Reg_File:ref_file|regs[7][27],   ;
 ;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[15][28], CPU:cpu|Reg_File:ref_file|regs[14][28], ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[13][28], CPU:cpu|Reg_File:ref_file|regs[12][28], ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[11][28], CPU:cpu|Reg_File:ref_file|regs[10][28], ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[9][28], CPU:cpu|Reg_File:ref_file|regs[6][28],   ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[1][28], CPU:cpu|Reg_File:ref_file|regs[15][29],  ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[14][29], CPU:cpu|Reg_File:ref_file|regs[13][29], ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[12][29], CPU:cpu|Reg_File:ref_file|regs[11][29], ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[10][29], CPU:cpu|Reg_File:ref_file|regs[9][29],  ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[6][29], CPU:cpu|Reg_File:ref_file|regs[1][29],   ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[12][28], CPU:cpu|Reg_File:ref_file|regs[11][28], ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[10][28], CPU:cpu|Reg_File:ref_file|regs[9][28],  ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[7][28], CPU:cpu|Reg_File:ref_file|regs[15][29],  ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[14][29], CPU:cpu|Reg_File:ref_file|regs[12][29], ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[11][29], CPU:cpu|Reg_File:ref_file|regs[10][29], ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[9][29], CPU:cpu|Reg_File:ref_file|regs[7][29],   ;
 ;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[15][30], CPU:cpu|Reg_File:ref_file|regs[14][30], ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[13][30], CPU:cpu|Reg_File:ref_file|regs[12][30], ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[11][30], CPU:cpu|Reg_File:ref_file|regs[10][30], ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[9][30], CPU:cpu|Reg_File:ref_file|regs[6][30],   ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[1][30], CPU:cpu|Reg_File:ref_file|regs[15][31],  ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[14][31], CPU:cpu|Reg_File:ref_file|regs[13][31], ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[12][31], CPU:cpu|Reg_File:ref_file|regs[11][31], ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[10][31], CPU:cpu|Reg_File:ref_file|regs[9][31],  ;
-;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[6][31], CPU:cpu|Reg_File:ref_file|regs[1][31]    ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[12][30], CPU:cpu|Reg_File:ref_file|regs[11][30], ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[10][30], CPU:cpu|Reg_File:ref_file|regs[9][30],  ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[7][30], CPU:cpu|Reg_File:ref_file|regs[15][31],  ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[14][31], CPU:cpu|Reg_File:ref_file|regs[12][31], ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[11][31], CPU:cpu|Reg_File:ref_file|regs[10][31], ;
+;                                       ;                                ; CPU:cpu|Reg_File:ref_file|regs[9][31], CPU:cpu|Reg_File:ref_file|regs[7][31]    ;
 +---------------------------------------+--------------------------------+---------------------------------------------------------------------------------+
 
 
@@ -1681,12 +1585,12 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 5485  ;
+; Total registers                              ; 5549  ;
 ; Number of registers using Synchronous Clear  ; 48    ;
 ; Number of registers using Synchronous Load   ; 69    ;
 ; Number of registers using Asynchronous Clear ; 384   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 4778  ;
+; Number of registers using Clock Enable       ; 4842  ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -1715,17 +1619,18 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                         ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |CPU_Demo|CPU:cpu|Immediate_Gen:imm_gen|Selector22 ;
-; 8:1                ; 32 bits   ; 160 LEs       ; 128 LEs              ; 32 LEs                 ; No         ; |CPU_Demo|CPU:cpu|Reg_File:ref_file|Mux25          ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |CPU_Demo|CPU:cpu|Immediate_Gen:imm_gen|Selector22 ;
+; 8:1                ; 32 bits   ; 160 LEs       ; 128 LEs              ; 32 LEs                 ; No         ; |CPU_Demo|CPU:cpu|Reg_File:ref_file|Mux20          ;
 ; 6:1                ; 31 bits   ; 124 LEs       ; 0 LEs                ; 124 LEs                ; No         ; |CPU_Demo|CPU:cpu|ALU:alu|Add0                     ;
 ; 6:1                ; 32 bits   ; 128 LEs       ; 32 LEs               ; 96 LEs                 ; No         ; |CPU_Demo|CPU:cpu|ALU:alu|Add0                     ;
-; 6:1                ; 3 bits    ; 12 LEs        ; 9 LEs                ; 3 LEs                  ; No         ; |CPU_Demo|CPU:cpu|Immediate_Gen:imm_gen|Selector29 ;
-; 32:1               ; 32 bits   ; 672 LEs       ; 192 LEs              ; 480 LEs                ; No         ; |CPU_Demo|CPU:cpu|Reg_File:ref_file|Mux46          ;
-; 130:1              ; 32 bits   ; 2752 LEs      ; 2752 LEs             ; 0 LEs                  ; No         ; |CPU_Demo|CPU:cpu|Mux:mux1|out[31]                 ;
-; 23:1               ; 7 bits    ; 105 LEs       ; 42 LEs               ; 63 LEs                 ; No         ; |CPU_Demo|CPU:cpu|ALU:alu|Mux9                     ;
-; 22:1               ; 7 bits    ; 98 LEs        ; 42 LEs               ; 56 LEs                 ; No         ; |CPU_Demo|CPU:cpu|ALU:alu|Mux23                    ;
-; 24:1               ; 4 bits    ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; No         ; |CPU_Demo|CPU:cpu|ALU:alu|Mux4                     ;
-; 23:1               ; 4 bits    ; 60 LEs        ; 32 LEs               ; 28 LEs                 ; No         ; |CPU_Demo|CPU:cpu|ALU:alu|Mux24                    ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 9 LEs                ; 0 LEs                  ; No         ; |CPU_Demo|CPU:cpu|Immediate_Gen:imm_gen|Selector30 ;
+; 32:1               ; 32 bits   ; 672 LEs       ; 256 LEs              ; 416 LEs                ; No         ; |CPU_Demo|CPU:cpu|Reg_File:ref_file|Mux57          ;
+; 8:1                ; 2 bits    ; 10 LEs        ; 8 LEs                ; 2 LEs                  ; No         ; |CPU_Demo|CPU:cpu|Immediate_Gen:imm_gen|Selector21 ;
+; 130:1              ; 32 bits   ; 2752 LEs      ; 2752 LEs             ; 0 LEs                  ; No         ; |CPU_Demo|CPU:cpu|Mux:mux1|out[18]                 ;
+; 23:1               ; 7 bits    ; 105 LEs       ; 42 LEs               ; 63 LEs                 ; No         ; |CPU_Demo|CPU:cpu|ALU:alu|Mux11                    ;
+; 22:1               ; 7 bits    ; 98 LEs        ; 42 LEs               ; 56 LEs                 ; No         ; |CPU_Demo|CPU:cpu|ALU:alu|Mux19                    ;
+; 24:1               ; 4 bits    ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; No         ; |CPU_Demo|CPU:cpu|ALU:alu|Mux7                     ;
+; 23:1               ; 4 bits    ; 60 LEs        ; 32 LEs               ; 28 LEs                 ; No         ; |CPU_Demo|CPU:cpu|ALU:alu|Mux26                    ;
 ; 25:1               ; 2 bits    ; 32 LEs        ; 18 LEs               ; 14 LEs                 ; No         ; |CPU_Demo|CPU:cpu|ALU:alu|Mux2                     ;
 ; 24:1               ; 2 bits    ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; No         ; |CPU_Demo|CPU:cpu|ALU:alu|Mux29                    ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
@@ -1925,22 +1830,22 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 121                         ;
-; cycloneiii_ff         ; 4354                        ;
-;     ENA               ; 4320                        ;
+; cycloneiii_ff         ; 4418                        ;
+;     ENA               ; 4384                        ;
 ;     SLD               ; 5                           ;
 ;     plain             ; 29                          ;
-; cycloneiii_lcell_comb ; 4221                        ;
+; cycloneiii_lcell_comb ; 4255                        ;
 ;     arith             ; 129                         ;
 ;         2 data inputs ; 30                          ;
 ;         3 data inputs ; 99                          ;
-;     normal            ; 4092                        ;
+;     normal            ; 4126                        ;
 ;         1 data inputs ; 10                          ;
-;         2 data inputs ; 164                         ;
-;         3 data inputs ; 418                         ;
-;         4 data inputs ; 3500                        ;
+;         2 data inputs ; 153                         ;
+;         3 data inputs ; 332                         ;
+;         4 data inputs ; 3631                        ;
 ;                       ;                             ;
-; Max LUT depth         ; 26.00                       ;
-; Average LUT depth     ; 14.49                       ;
+; Max LUT depth         ; 27.00                       ;
+; Average LUT depth     ; 14.85                       ;
 +-----------------------+-----------------------------+
 
 
@@ -1949,7 +1854,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:28     ;
+; Top            ; 00:00:36     ;
 +----------------+--------------+
 
 
@@ -2128,7 +2033,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Sun Feb 12 08:28:44 2023
+    Info: Processing started: Sun Feb 12 15:54:03 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off hydra -c hydra
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -2176,7 +2081,7 @@ Info (12128): Elaborating entity "Digit" for hierarchy "Digits:digits|Digit:seg0
 Info (12128): Elaborating entity "CPU" for hierarchy "CPU:cpu" File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v Line: 44
 Info (12128): Elaborating entity "PC_Unit" for hierarchy "CPU:cpu|PC_Unit:pc_unit" File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU.v Line: 49
 Info (12128): Elaborating entity "Ins_Mem" for hierarchy "CPU:cpu|Ins_Mem:ins_mem" File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU.v Line: 55
-Warning (10850): Verilog HDL warning at Ins_Mem.v(12): number of words (15) in memory file does not match the number of elements in the address range [0:31] File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Ins_Mem.v Line: 12
+Warning (10850): Verilog HDL warning at Ins_Mem.v(12): number of words (26) in memory file does not match the number of elements in the address range [0:31] File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Ins_Mem.v Line: 12
 Warning (10030): Net "mem.data_a" at Ins_Mem.v(8) has no driver or initial value, using a default initial value '0' File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Ins_Mem.v Line: 8
 Warning (10030): Net "mem.waddr_a" at Ins_Mem.v(8) has no driver or initial value, using a default initial value '0' File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Ins_Mem.v Line: 8
 Warning (10030): Net "mem.we_a" at Ins_Mem.v(8) has no driver or initial value, using a default initial value '0' File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Ins_Mem.v Line: 8
@@ -2233,7 +2138,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr
     Info (12023): Found entity 1: cmpr_ngc File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/db/cmpr_ngc.tdf Line: 23
 Info (12033): Analysis and Synthesis generated Signal Tap or debug node instance "auto_signaltap_0"
 Info (11170): Starting IP generation for the debug fabric: alt_sld_fab.
-Info (11172): 2023.02.12.08:29:01 Progress: Loading sldf3208e4b/alt_sld_fab_wrapper_hw.tcl
+Info (11172): 2023.02.12.15:54:25 Progress: Loading sldf3208e4b/alt_sld_fab_wrapper_hw.tcl
 Info (11172): Alt_sld_fab.alt_sld_fab: SLD fabric agents which did not specify prefer_host were connected to JTAG
 Info (11172): Alt_sld_fab: Generating alt_sld_fab "alt_sld_fab" for QUARTUS_SYNTH
 Info (11172): Alt_sld_fab: "alt_sld_fab" instantiated alt_sld_fab "alt_sld_fab"
@@ -2263,33 +2168,33 @@ Info (13025): Duplicate LATCH primitives merged into single LATCH primitive
 Warning (13012): Latch CPU:cpu|Control_Unit:control_unit|alu_op[0] has unsafe behavior File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Control_Unit.v Line: 29
     Warning (13013): Ports D and ENA on the latch are fed by the same signal CPU:cpu|PC_Unit:pc_unit|pc[6] File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/PC_Unit.v Line: 16
 Warning (13012): Latch CPU:cpu|Control_Unit:control_unit|alu_op[1] has unsafe behavior File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Control_Unit.v Line: 29
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal CPU:cpu|PC_Unit:pc_unit|pc[6] File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/PC_Unit.v Line: 16
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal CPU:cpu|PC_Unit:pc_unit|pc[3] File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/PC_Unit.v Line: 16
 Warning (13012): Latch CPU:cpu|Control_Unit:control_unit|alu_src has unsafe behavior File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Control_Unit.v Line: 25
     Warning (13013): Ports D and ENA on the latch are fed by the same signal CPU:cpu|PC_Unit:pc_unit|pc[6] File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/PC_Unit.v Line: 16
 Warning (13012): Latch CPU:cpu|Control_Unit:control_unit|mem_read has unsafe behavior File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Control_Unit.v Line: 25
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal CPU:cpu|PC_Unit:pc_unit|pc[4] File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/PC_Unit.v Line: 16
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal CPU:cpu|PC_Unit:pc_unit|pc[6] File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/PC_Unit.v Line: 16
 Warning (13012): Latch CPU:cpu|Control_Unit:control_unit|reg_write has unsafe behavior File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Control_Unit.v Line: 25
     Warning (13013): Ports D and ENA on the latch are fed by the same signal CPU:cpu|PC_Unit:pc_unit|pc[6] File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/PC_Unit.v Line: 16
 Warning (13012): Latch CPU:cpu|Control_Unit:control_unit|mem_write has unsafe behavior File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Control_Unit.v Line: 25
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal CPU:cpu|PC_Unit:pc_unit|pc[4] File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/PC_Unit.v Line: 16
-Warning (13012): Latch CPU:cpu|Control_Unit:control_unit|branch has unsafe behavior File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Control_Unit.v Line: 25
     Warning (13013): Ports D and ENA on the latch are fed by the same signal CPU:cpu|PC_Unit:pc_unit|pc[6] File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/PC_Unit.v Line: 16
+Warning (13012): Latch CPU:cpu|Control_Unit:control_unit|branch has unsafe behavior File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Control_Unit.v Line: 25
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal CPU:cpu|PC_Unit:pc_unit|pc[3] File: M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/PC_Unit.v Line: 16
 Info (286031): Timing-Driven Synthesis is running on partition "Top"
 Info (17049): 25 registers lost all their fanouts during netlist optimizations.
 Info (144001): Generated suppressed messages file M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/output_files/hydra.map.smsg
 Info (35024): Successfully connected in-system debug instance "auto_signaltap_0" to all 161 required data inputs, trigger inputs, acquisition clocks, and dynamic pins
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 10120 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 10218 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
     Info (21059): Implemented 121 output pins
-    Info (21061): Implemented 9930 logic cells
+    Info (21061): Implemented 10028 logic cells
     Info (21064): Implemented 64 RAM segments
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 41 warnings
-    Info: Peak virtual memory: 4890 megabytes
-    Info: Processing ended: Sun Feb 12 08:29:43 2023
-    Info: Elapsed time: 00:00:59
-    Info: Total CPU time (on all processors): 00:01:24
+    Info: Peak virtual memory: 4879 megabytes
+    Info: Processing ended: Sun Feb 12 15:55:28 2023
+    Info: Elapsed time: 00:01:25
+    Info: Total CPU time (on all processors): 00:01:47
 
 
 +------------------------------------------+

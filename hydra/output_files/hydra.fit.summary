@@ -1,14 +1,14 @@
-Fitter Status : Successful - Sun Feb 12 08:30:18 2023
+Fitter Status : Successful - Sun Feb 12 15:56:15 2023
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : hydra
 Top-level Entity Name : CPU_Demo
 Family : Cyclone IV E
 Device : EP4CE115F29C7
 Timing Models : Final
-Total logic elements : 7,555 / 114,480 ( 7 % )
-    Total combinational functions : 4,844 / 114,480 ( 4 % )
-    Dedicated logic registers : 5,485 / 114,480 ( 5 % )
-Total registers : 5485
+Total logic elements : 7,612 / 114,480 ( 7 % )
+    Total combinational functions : 4,878 / 114,480 ( 4 % )
+    Dedicated logic registers : 5,549 / 114,480 ( 5 % )
+Total registers : 5549
 Total pins : 121 / 529 ( 23 % )
 Total virtual pins : 0
 Total memory bits : 8,192 / 3,981,312 ( < 1 % )
