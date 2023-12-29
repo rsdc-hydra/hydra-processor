@@ -12,119 +12,159 @@
 # 
 # vlog -vlog01compat -work work +incdir+M:/Academics/Sem5/WorkPlace/Circuits\ and\ Systems\ Design/Digital/Final\ Processor\ Design/hydra {M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Reg_File.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:56:12 on Feb 11,2023
+# Start time: 14:51:58 on Feb 12,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra" M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Reg_File.v 
 # -- Compiling module Reg_File
 # 
 # Top level modules:
 # 	Reg_File
-# End time: 17:56:12 on Feb 11,2023, Elapsed time: 0:00:00
+# End time: 14:51:59 on Feb 12,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+M:/Academics/Sem5/WorkPlace/Circuits\ and\ Systems\ Design/Digital/Final\ Processor\ Design/hydra {M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/ALU_Control_Unit.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:56:13 on Feb 11,2023
+# Start time: 14:51:59 on Feb 12,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra" M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/ALU_Control_Unit.v 
 # -- Compiling module ALU_Control_Unit
 # 
 # Top level modules:
 # 	ALU_Control_Unit
-# End time: 17:56:13 on Feb 11,2023, Elapsed time: 0:00:00
+# End time: 14:51:59 on Feb 12,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+M:/Academics/Sem5/WorkPlace/Circuits\ and\ Systems\ Design/Digital/Final\ Processor\ Design/hydra {M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/ALU.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:56:13 on Feb 11,2023
+# Start time: 14:51:59 on Feb 12,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra" M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/ALU.v 
 # -- Compiling module ALU
 # 
 # Top level modules:
 # 	ALU
-# End time: 17:56:13 on Feb 11,2023, Elapsed time: 0:00:00
+# End time: 14:51:59 on Feb 12,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+M:/Academics/Sem5/WorkPlace/Circuits\ and\ Systems\ Design/Digital/Final\ Processor\ Design/hydra {M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Control_Unit.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:56:13 on Feb 11,2023
+# Start time: 14:51:59 on Feb 12,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra" M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Control_Unit.v 
 # -- Compiling module Control_Unit
 # 
 # Top level modules:
 # 	Control_Unit
-# End time: 17:56:13 on Feb 11,2023, Elapsed time: 0:00:00
+# End time: 14:51:59 on Feb 12,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+M:/Academics/Sem5/WorkPlace/Circuits\ and\ Systems\ Design/Digital/Final\ Processor\ Design/hydra {M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:56:14 on Feb 11,2023
+# Start time: 14:51:59 on Feb 12,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra" M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU.v 
 # -- Compiling module CPU
 # 
 # Top level modules:
 # 	CPU
-# End time: 17:56:14 on Feb 11,2023, Elapsed time: 0:00:00
+# End time: 14:51:59 on Feb 12,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+M:/Academics/Sem5/WorkPlace/Circuits\ and\ Systems\ Design/Digital/Final\ Processor\ Design/hydra {M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Data_Mem.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:56:14 on Feb 11,2023
+# Start time: 14:51:59 on Feb 12,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra" M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Data_Mem.v 
 # -- Compiling module Data_Mem
 # 
 # Top level modules:
 # 	Data_Mem
-# End time: 17:56:14 on Feb 11,2023, Elapsed time: 0:00:00
+# End time: 14:51:59 on Feb 12,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+M:/Academics/Sem5/WorkPlace/Circuits\ and\ Systems\ Design/Digital/Final\ Processor\ Design/hydra {M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Immediate_Gen.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:56:14 on Feb 11,2023
+# Start time: 14:51:59 on Feb 12,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra" M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Immediate_Gen.v 
 # -- Compiling module Immediate_Gen
 # 
 # Top level modules:
 # 	Immediate_Gen
-# End time: 17:56:14 on Feb 11,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+M:/Academics/Sem5/WorkPlace/Circuits\ and\ Systems\ Design/Digital/Final\ Processor\ Design/hydra {M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Ins_Mem.v}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:56:14 on Feb 11,2023
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra" M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Ins_Mem.v 
-# -- Compiling module Ins_Mem
-# 
-# Top level modules:
-# 	Ins_Mem
-# End time: 17:56:14 on Feb 11,2023, Elapsed time: 0:00:00
+# End time: 14:52:00 on Feb 12,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+M:/Academics/Sem5/WorkPlace/Circuits\ and\ Systems\ Design/Digital/Final\ Processor\ Design/hydra {M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Mux.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:56:14 on Feb 11,2023
+# Start time: 14:52:00 on Feb 12,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra" M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Mux.v 
 # -- Compiling module Mux
 # 
 # Top level modules:
 # 	Mux
-# End time: 17:56:14 on Feb 11,2023, Elapsed time: 0:00:00
+# End time: 14:52:00 on Feb 12,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+M:/Academics/Sem5/WorkPlace/Circuits\ and\ Systems\ Design/Digital/Final\ Processor\ Design/hydra {M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/PC_Unit.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:56:14 on Feb 11,2023
+# Start time: 14:52:00 on Feb 12,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra" M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/PC_Unit.v 
 # -- Compiling module PC_Unit
 # 
 # Top level modules:
 # 	PC_Unit
-# End time: 17:56:14 on Feb 11,2023, Elapsed time: 0:00:00
+# End time: 14:52:00 on Feb 12,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+M:/Academics/Sem5/WorkPlace/Circuits\ and\ Systems\ Design/Digital/Final\ Processor\ Design/hydra {M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Digit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:52:00 on Feb 12,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra" M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Digit.v 
+# -- Compiling module Digit
+# 
+# Top level modules:
+# 	Digit
+# End time: 14:52:00 on Feb 12,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+M:/Academics/Sem5/WorkPlace/Circuits\ and\ Systems\ Design/Digital/Final\ Processor\ Design/hydra {M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Digits.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:52:00 on Feb 12,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra" M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Digits.v 
+# -- Compiling module Digits
+# 
+# Top level modules:
+# 	Digits
+# End time: 14:52:00 on Feb 12,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+M:/Academics/Sem5/WorkPlace/Circuits\ and\ Systems\ Design/Digital/Final\ Processor\ Design/hydra {M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Clk_Div.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:52:00 on Feb 12,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra" M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Clk_Div.v 
+# -- Compiling module Clk_Div
+# 
+# Top level modules:
+# 	Clk_Div
+# End time: 14:52:00 on Feb 12,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+M:/Academics/Sem5/WorkPlace/Circuits\ and\ Systems\ Design/Digital/Final\ Processor\ Design/hydra {M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:52:00 on Feb 12,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra" M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v 
+# -- Compiling module CPU_Demo
+# 
+# Top level modules:
+# 	CPU_Demo
+# End time: 14:52:00 on Feb 12,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+M:/Academics/Sem5/WorkPlace/Circuits\ and\ Systems\ Design/Digital/Final\ Processor\ Design/hydra {M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Ins_Mem.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:52:00 on Feb 12,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra" M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Ins_Mem.v 
+# -- Compiling module Ins_Mem
+# 
+# Top level modules:
+# 	Ins_Mem
+# End time: 14:52:00 on Feb 12,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+M:/Academics/Sem5/WorkPlace/Circuits\ and\ Systems\ Design/Digital/Final\ Processor\ Design/hydra {M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Tb.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:56:14 on Feb 11,2023
+# Start time: 14:52:00 on Feb 12,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra" M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Tb.v 
 # -- Compiling module CPU_Tb
 # 
 # Top level modules:
 # 	CPU_Tb
-# End time: 17:56:15 on Feb 11,2023, Elapsed time: 0:00:01
+# End time: 14:52:00 on Feb 12,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  CPU_Tb
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" CPU_Tb 
-# Start time: 17:56:15 on Feb 11,2023
+# Start time: 14:52:01 on Feb 12,2023
 # Loading work.CPU_Tb
 # Loading work.CPU
 # Loading work.PC_Unit
@@ -143,8 +183,8 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-#   12583315
+# WARNING: No extended dataflow license exists
 # Break key hit
 # Simulation stop requested.
-# End time: 18:39:39 on Feb 11,2023, Elapsed time: 0:43:24
+# End time: 14:56:23 on Feb 12,2023, Elapsed time: 0:04:22
 # Errors: 0, Warnings: 0

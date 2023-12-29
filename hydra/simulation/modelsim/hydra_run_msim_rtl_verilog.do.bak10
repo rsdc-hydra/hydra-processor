@@ -1,0 +1,30 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+M:/Academics/Sem5/WorkPlace/Circuits\ and\ Systems\ Design/Digital/Final\ Processor\ Design/hydra {M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Reg_File.v}
+vlog -vlog01compat -work work +incdir+M:/Academics/Sem5/WorkPlace/Circuits\ and\ Systems\ Design/Digital/Final\ Processor\ Design/hydra {M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/ALU_Control_Unit.v}
+vlog -vlog01compat -work work +incdir+M:/Academics/Sem5/WorkPlace/Circuits\ and\ Systems\ Design/Digital/Final\ Processor\ Design/hydra {M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/ALU.v}
+vlog -vlog01compat -work work +incdir+M:/Academics/Sem5/WorkPlace/Circuits\ and\ Systems\ Design/Digital/Final\ Processor\ Design/hydra {M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Control_Unit.v}
+vlog -vlog01compat -work work +incdir+M:/Academics/Sem5/WorkPlace/Circuits\ and\ Systems\ Design/Digital/Final\ Processor\ Design/hydra {M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU.v}
+vlog -vlog01compat -work work +incdir+M:/Academics/Sem5/WorkPlace/Circuits\ and\ Systems\ Design/Digital/Final\ Processor\ Design/hydra {M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Data_Mem.v}
+vlog -vlog01compat -work work +incdir+M:/Academics/Sem5/WorkPlace/Circuits\ and\ Systems\ Design/Digital/Final\ Processor\ Design/hydra {M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Immediate_Gen.v}
+vlog -vlog01compat -work work +incdir+M:/Academics/Sem5/WorkPlace/Circuits\ and\ Systems\ Design/Digital/Final\ Processor\ Design/hydra {M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Mux.v}
+vlog -vlog01compat -work work +incdir+M:/Academics/Sem5/WorkPlace/Circuits\ and\ Systems\ Design/Digital/Final\ Processor\ Design/hydra {M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/PC_Unit.v}
+vlog -vlog01compat -work work +incdir+M:/Academics/Sem5/WorkPlace/Circuits\ and\ Systems\ Design/Digital/Final\ Processor\ Design/hydra {M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Digit.v}
+vlog -vlog01compat -work work +incdir+M:/Academics/Sem5/WorkPlace/Circuits\ and\ Systems\ Design/Digital/Final\ Processor\ Design/hydra {M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Digits.v}
+vlog -vlog01compat -work work +incdir+M:/Academics/Sem5/WorkPlace/Circuits\ and\ Systems\ Design/Digital/Final\ Processor\ Design/hydra {M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Clk_Div.v}
+vlog -vlog01compat -work work +incdir+M:/Academics/Sem5/WorkPlace/Circuits\ and\ Systems\ Design/Digital/Final\ Processor\ Design/hydra {M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Demo.v}
+vlog -vlog01compat -work work +incdir+M:/Academics/Sem5/WorkPlace/Circuits\ and\ Systems\ Design/Digital/Final\ Processor\ Design/hydra {M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/Ins_Mem.v}
+
+vlog -vlog01compat -work work +incdir+M:/Academics/Sem5/WorkPlace/Circuits\ and\ Systems\ Design/Digital/Final\ Processor\ Design/hydra {M:/Academics/Sem5/WorkPlace/Circuits and Systems Design/Digital/Final Processor Design/hydra/CPU_Tb.v}
+
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  CPU_Tb
+
+add wave *
+view structure
+view signals
+run -all

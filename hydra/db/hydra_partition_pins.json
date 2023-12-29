@@ -356,6 +356,134 @@
 					"strict" : false
 				},
 				{
+					"name" : "testM[0]",
+					"strict" : false
+				},
+				{
+					"name" : "testM[1]",
+					"strict" : false
+				},
+				{
+					"name" : "testM[2]",
+					"strict" : false
+				},
+				{
+					"name" : "testM[3]",
+					"strict" : false
+				},
+				{
+					"name" : "testM[4]",
+					"strict" : false
+				},
+				{
+					"name" : "testM[5]",
+					"strict" : false
+				},
+				{
+					"name" : "testM[6]",
+					"strict" : false
+				},
+				{
+					"name" : "testM[7]",
+					"strict" : false
+				},
+				{
+					"name" : "testM[8]",
+					"strict" : false
+				},
+				{
+					"name" : "testM[9]",
+					"strict" : false
+				},
+				{
+					"name" : "testM[10]",
+					"strict" : false
+				},
+				{
+					"name" : "testM[11]",
+					"strict" : false
+				},
+				{
+					"name" : "testM[12]",
+					"strict" : false
+				},
+				{
+					"name" : "testM[13]",
+					"strict" : false
+				},
+				{
+					"name" : "testM[14]",
+					"strict" : false
+				},
+				{
+					"name" : "testM[15]",
+					"strict" : false
+				},
+				{
+					"name" : "testM[16]",
+					"strict" : false
+				},
+				{
+					"name" : "testM[17]",
+					"strict" : false
+				},
+				{
+					"name" : "testM[18]",
+					"strict" : false
+				},
+				{
+					"name" : "testM[19]",
+					"strict" : false
+				},
+				{
+					"name" : "testM[20]",
+					"strict" : false
+				},
+				{
+					"name" : "testM[21]",
+					"strict" : false
+				},
+				{
+					"name" : "testM[22]",
+					"strict" : false
+				},
+				{
+					"name" : "testM[23]",
+					"strict" : false
+				},
+				{
+					"name" : "testM[24]",
+					"strict" : false
+				},
+				{
+					"name" : "testM[25]",
+					"strict" : false
+				},
+				{
+					"name" : "testM[26]",
+					"strict" : false
+				},
+				{
+					"name" : "testM[27]",
+					"strict" : false
+				},
+				{
+					"name" : "testM[28]",
+					"strict" : false
+				},
+				{
+					"name" : "testM[29]",
+					"strict" : false
+				},
+				{
+					"name" : "testM[30]",
+					"strict" : false
+				},
+				{
+					"name" : "testM[31]",
+					"strict" : false
+				},
+				{
 					"name" : "src_clk",
 					"strict" : false
 				},
