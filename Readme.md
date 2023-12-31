@@ -23,7 +23,9 @@ Every write operation (register/memory) implemented as sequential logic (fired o
 
 **Data Path and Control Signals** 
 
-![](imgs/Aspose.Words.47c75c42-40af-4d26-b3ea-f46cd8897ce4.002.jpeg)Instruction memory outputs the instruction based on the PC value. Operands, Opcode and immediates are extracted from the instruction by slicing and connecting to the relevant path. Control unit generate control instruction for each unit based on the opcode. ALU control unit generate the control signals to perform operators based on the ALUOp from Control Unit, func3 and func7 fields of the instruction. Register File, Muxes, Data Memory activated accordingly based on the control signals form Control unit. PC increment by 4 or desired immediate based on control signals 
+<p align="center"><img src="imgs/Aspose.Words.47c75c42-40af-4d26-b3ea-f46cd8897ce4.002.jpeg" alt="Figure"></p>
+
+Instruction memory outputs the instruction based on the PC value. Operands, Opcode and immediates are extracted from the instruction by slicing and connecting to the relevant path. Control unit generate control instruction for each unit based on the opcode. ALU control unit generate the control signals to perform operators based on the ALUOp from Control Unit, func3 and func7 fields of the instruction. Register File, Muxes, Data Memory activated accordingly based on the control signals form Control unit. PC increment by 4 or desired immediate based on control signals 
 
 **Types of Instructions** 
 
@@ -75,7 +77,7 @@ All the following instructions can be run in this processor.
 |sltu  rd, rs1, rs2 |||||
 **Control Unit** 
 
-![](imgs/Aspose.Words.47c75c42-40af-4d26-b3ea-f46cd8897ce4.003.jpeg)
+<p align="center"><img src="imgs/Aspose.Words.47c75c42-40af-4d26-b3ea-f46cd8897ce4.003.jpeg" alt="Figure"></p>
 
 There is only one input to the control unit of this processor. It is a seven bit long binary number, and it is the opcode of the given instruction. As the are five types of instructions for this processor, it is required to have five different opcodes. Here are the five opcodes. 
 
@@ -129,7 +131,7 @@ Table: -Control signal values for a specific opcode
 
 **ALU control unit** 
 
-![](imgs/Aspose.Words.47c75c42-40af-4d26-b3ea-f46cd8897ce4.005.jpeg)
+<p align="center"><img src="imgs/Aspose.Words.47c75c42-40af-4d26-b3ea-f46cd8897ce4.005.jpeg" alt="Figure"></p>
 
 There are two inputs to the ALU control unit. They are **alu\_op** and **ins[30,14:12].** With the combination of alu\_op and ins[30,14:12] we can give a command to ALU to do a defined operation.  
 
@@ -191,7 +193,7 @@ Here x means, it can be 0 or 1
 
 **ALU** 
 
-![](imgs/Aspose.Words.47c75c42-40af-4d26-b3ea-f46cd8897ce4.006.jpeg)
+<p align="center"><img src="imgs/Aspose.Words.47c75c42-40af-4d26-b3ea-f46cd8897ce4.006.jpeg" alt="Figure"></p>
 
 There are three inputs to the ALU. Two of them are operands of the instruction. They are 32 bit long and one of them directly given by the register file while the other input comes through a MUX. Mux decides if it should give the immediate value or the register file value depending on the alu\_src control unit output signal. If it is 1 then it selects the immediate value and feed it to the ALU hence otherwise. The following table shows the ALU control signal and the corresponding operation. 
 
@@ -238,13 +240,13 @@ Let  “a” and “b” be the signed numbers and “A” and “B” be the un
 
 **Program Counter** 
 
-![](imgs/Aspose.Words.47c75c42-40af-4d26-b3ea-f46cd8897ce4.007.jpeg)
+<p align="center"><img src="imgs/Aspose.Words.47c75c42-40af-4d26-b3ea-f46cd8897ce4.007.jpeg" alt="Figure"></p>
 
 Register, increment by 4 in each clock cycle except both zero and branch control signals are activated. If both zero and branch control signals are activated, PC increment with the desired immediate value (1 bit left shifted imm) 
 
 **Register File** 
 
-![](imgs/Aspose.Words.47c75c42-40af-4d26-b3ea-f46cd8897ce4.008.jpeg)
+<p align="center"><img src="imgs/Aspose.Words.47c75c42-40af-4d26-b3ea-f46cd8897ce4.008.jpeg" alt="Figure"></p>
 
 Implemented as array of 32 bits registers which contains 32 registers. X0 is always zero. Other registers can read and write. It has 3 of 5bit address inputs , 32bit data input, 2 of 32bit data outputs and 1bit control signal to activate write operation Read data in the regfile is implemented as combination logic. Register write done at the rising edge of the clock input. when the write signal is activated. 
 
@@ -256,11 +258,11 @@ Implemented as array of 32 bits registers which contains 32 registers. X0 is alw
 
 One word consists of four bytes 
 
-![](imgs/Aspose.Words.47c75c42-40af-4d26-b3ea-f46cd8897ce4.009.png)
+<p align="center"><img src="imgs/Aspose.Words.47c75c42-40af-4d26-b3ea-f46cd8897ce4.009.png" alt="Figure"></p>
 
 One cache block consists of four data words 
 
-![](imgs/Aspose.Words.47c75c42-40af-4d26-b3ea-f46cd8897ce4.010.png)
+<p align="center"><img src="imgs/Aspose.Words.47c75c42-40af-4d26-b3ea-f46cd8897ce4.010.png" alt="Figure"></p>
 
 In the cache there are four cache blocks like above. 
 
@@ -291,13 +293,13 @@ Write data:
 | :- | - |
 |||
 |||
-![](imgs/Aspose.Words.47c75c42-40af-4d26-b3ea-f46cd8897ce4.011.jpeg)
+<p align="center"><img src="imgs/Aspose.Words.47c75c42-40af-4d26-b3ea-f46cd8897ce4.011.jpeg" alt="Figure"></p>
 
 **Achieved performance level**
 
-![](imgs/Aspose.Words.47c75c42-40af-4d26-b3ea-f46cd8897ce4.012.png)
+<p align="center"><img src="imgs/Aspose.Words.47c75c42-40af-4d26-b3ea-f46cd8897ce4.012.png" alt="Figure"></p>
 
-![](imgs/Aspose.Words.47c75c42-40af-4d26-b3ea-f46cd8897ce4.013.png)
+<p align="center"><img src="imgs/Aspose.Words.47c75c42-40af-4d26-b3ea-f46cd8897ce4.013.png" alt="Figure"></p>
 
 Practically archived Fmax = 50MHz 
 
@@ -355,4 +357,4 @@ addi x3, x3, 29     # I
 
 addi x3, x3, 24     # I         result = h1158 (Final Result) beq x0,x0,0       # SB       Infinite loop 
 
-[Videos of the running demonstration (intentionally reduced the clock speed by dividing clock source to view the result step by step) ](https://dms.uom.lk/s/aoxn4iG7xy5rTTW)![](imgs/Aspose.Words.47c75c42-40af-4d26-b3ea-f46cd8897ce4.014.jpeg)
+[Videos of the running demonstration (intentionally reduced the clock speed by dividing clock source to view the result step by step) ](https://dms.uom.lk/s/aoxn4iG7xy5rTTW)<p align="center"><img src="imgs/Aspose.Words.47c75c42-40af-4d26-b3ea-f46cd8897ce4.014.jpeg" alt="Figure"></p>
